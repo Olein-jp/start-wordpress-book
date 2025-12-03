@@ -4,10 +4,14 @@
   "main": "index.js",
   "scripts": {
     "textlint": "npx textlint article/**/**.md --fix",
-    "pandoc:00:01": "pandoc article/00/0-1.md -f markdown -t icml -s -o article/00/0-1.icml",
+    "pandoc:00:01": "pandoc article/00/0-1.md --resource-path=.:src:images -f markdown -t icml -s -o article/00/0-1.icml 2>/dev/null",
     "pandoc:00": "npm-run-all pandoc:00:* && npm run textlint",
-    "pandoc:01:01": "pandoc article/01/1-1.md -f markdown -t icml -s -o article/01/1-1.icml",
-    "pandoc:01": "npm-run-all pandoc:01:* && npm run textlint"
+    "pandoc:01:01": "pandoc article/01/1-1.md --resource-path=.:src:images -f markdown -t icml -s -o article/01/1-1.icml 2>/dev/null",
+    "pandoc:01": "npm-run-all pandoc:01:* && npm run textlint",
+    "pandoc:02:01": "pandoc article/02/2-1.md --resource-path=.:src:images -f markdown -t icml -s -o article/02/2-1.icml 2>/dev/null",
+    "pandoc:02:02": "pandoc article/02/2-2.md --resource-path=.:src:images -f markdown -t icml -s -o article/02/2-2.icml 2>/dev/null",
+    "pandoc:02:03": "pandoc article/02/2-3.md --resource-path=.:src:images -f markdown -t icml -s -o article/02/2-3.icml 2>/dev/null",
+    "pandoc:02": "npm-run-all pandoc:02:* && npm run textlint"
   },
   "author": "Koji Kuno",
   "devDependencies": {
