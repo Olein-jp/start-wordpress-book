@@ -113,15 +113,6 @@
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>投稿</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content> を管理し、関係する設定ができます。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <HyperlinkTextDestination Self="HyperlinkTextDestination/#投稿一覧" Name="Destination" DestinationUniqueKey="1" />
@@ -165,7 +156,19 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>投稿画面では、ウェブサイト内のすべての投稿を管理できます。この画面から、投稿の編集、削除、閲覧が可能です。また、フィルタリングや検索機能を使えば、特定の条件に一致する投稿を素早く簡単に見つけられます。</Content>
+    <Content>ナビゲーションメニューから</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>投稿</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>を選択すると、この</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>投稿一覧</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>に移動します。ここでは、WordPress 内のすべての投稿を管理できます。この画面から、投稿の編集、削除、閲覧が可能です。また、フィルタリングや検索機能を使えば、特定の条件に一致する投稿を素早く簡単に見つけられます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -993,12 +996,8 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#タグ-httpswordpress.orgdocumentationarticleposts-tags-screen" Name="Destination" DestinationUniqueKey="1" />
-    <Content>タグ </Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#タグ-httpswordpress.orgdocumentationarticleposts-tags-screen" Name="Destination" DestinationUniqueKey="1" />
-    <Content>https://wordpress.org/documentation/article/posts-tags-screen/</Content>
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#タグ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>タグ</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
