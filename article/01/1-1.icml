@@ -71,6 +71,11 @@
           <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
         </Properties>
       </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Header1" Name="Header1" LeftIndent="0" PointSize="36">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
       <ParagraphStyle Self="ParagraphStyle/Header2" Name="Header2" LeftIndent="0" PointSize="30">
         <Properties>
           <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
@@ -101,7 +106,7 @@
     <StoryPreference OpticalMarginAlignment="true" OpticalMarginSize="12" />
 
 <!-- body needs to be non-indented, otherwise code blocks are indented too far -->
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <HyperlinkTextDestination Self="HyperlinkTextDestination/#wordpress-とは" Name="Destination" DestinationUniqueKey="1" />
     <Content>WordPress とは</Content>
@@ -284,12 +289,6 @@
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>また、運用しているウェブサイトに何か問題が発生した場合に、問題解決の糸口を見つける方法（デバッグとも呼ぶ）の 1 つとして、有効化しているテーマを標準テーマに切り替えて動作確認を行うという方法があります。 この動作確認を行うことで、テーマに問題があるのか、それ以外に問題があるのかを検証できます。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
-    <Content>https://developer.wordpress.org/advanced-administration/wordpress/common-errors/</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
