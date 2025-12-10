@@ -1968,7 +1968,13 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>選択しているブロックで設定可能な情報が表示されます。詳しくはコアブロックを使ってみようで紹介します。</Content>
+    <Content>選択しているブロックで設定可能な情報が表示されます。詳しくは</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>第5章「コアブロックを使ってみよう」</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>で紹介します。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
