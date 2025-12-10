@@ -9,7 +9,8 @@
     "pandoc:02": "for f in article/02/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc:03": "for f in article/03/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc:04": "for f in article/04/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
-    "pandoc": "npm-run-all pandoc:00 pandoc:01 pandoc:02 pandoc:03 pandoc:04 && npm run textlint"
+    "pandoc:05": "for f in article/05/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
+    "pandoc": "npm-run-all pandoc:00 pandoc:01 pandoc:02 pandoc:03 pandoc:04 pandoc:05 && npm run textlint"
   },
   "author": "Koji Kuno",
   "devDependencies": {
