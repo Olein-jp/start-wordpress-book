@@ -339,7 +339,7 @@
     <Content>&lt;sup&gt;</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>でマークアップされます。</Content>
+    <Content> でマークアップされます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -354,7 +354,7 @@
     <Content>&lt;sub&gt;</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>でマークアップされます。</Content>
+    <Content> でマークアップされます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -369,7 +369,7 @@
     <Content>&lt;s&gt;</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>でマークアップされます。</Content>
+    <Content> でマークアップされます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -402,7 +402,7 @@
     <Content>&lt;bdo&gt;</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>でマークアップされます。</Content>
+    <Content> でマークアップされます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />

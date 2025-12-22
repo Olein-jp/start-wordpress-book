@@ -571,7 +571,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>HTML アンカーと追加CSSクラスが設定できます。</Content>
+    <Content>HTML アンカーと追加 CSS クラスが設定できます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -823,7 +823,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>ブロックに適応する見出しのレベルを編集できます。H1からH6まで選択できます。</Content>
+    <Content>ブロックに適応する見出しのレベルを編集できます。H1 から H6 まで選択できます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -1428,8 +1428,8 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#デュオトーンフィルターを適応" Name="Destination" DestinationUniqueKey="1" />
-    <Content>デュオトーンフィルターを適応</Content>
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#デュオトーンフィルターを適用" Name="Destination" DestinationUniqueKey="1" />
+    <Content>デュオトーンフィルターを適用</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -1670,7 +1670,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>アクセシビリティやSEOにとって重要な画像の代替テキストを設定できます。</Content>
+    <Content>アクセシビリティや SEO にとって重要な画像の代替テキストを設定できます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -2014,7 +2014,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>その他に、配置、デュオトーンフィルターを適応、置換などがあります。</Content>
+    <Content>その他に、配置、デュオトーンフィルターを適用、置換などがあります。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -2789,7 +2789,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/NumList &gt; first" NumberingContinue="false">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>任意の画像とテキスト（見出しとテキスト）を配置する</Content>
+    <Content>任意の画像とテキスト（見出しとテキスト）を配置</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />

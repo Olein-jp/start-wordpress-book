@@ -1322,7 +1322,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>クリックすることで1つ前に表示していたページに戻ります。</Content>
+    <Content>クリックすることで 1 つ前に表示していたページに戻ります。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -1465,7 +1465,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>もう一つが</Content>
+    <Content>もう 1 つが</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
     <Content>アウトライン</Content>
@@ -1971,7 +1971,7 @@
     <Content>選択しているブロックで設定可能な情報が表示されます。詳しくは</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>第5章「コアブロックを使ってみよう」</Content>
+    <Content>第 5 章「コアブロックを使ってみよう」</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>で紹介します。</Content>
@@ -2244,7 +2244,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>ビジュアルエディターとは違う、もう1つのエディターモードです。ブロックが出力する HTML を確認する際に利用したりします。</Content>
+    <Content>ビジュアルエディターとは違う、もう 1 つのエディターモードです。ブロックが出力する HTML を確認する際に利用したりします。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
