@@ -11,6 +11,7 @@
     "pandoc:04": "for f in article/04/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc:05": "for f in article/05/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc:06": "for f in article/06/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
+    "pandoc:98": "for f in article/98/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc": "npm-run-all pandoc:* && npm run textlint"
   },
   "author": "Koji Kuno",

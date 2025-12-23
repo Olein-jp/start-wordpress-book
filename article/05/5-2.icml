@@ -577,7 +577,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>以後、一度解説したものは省略します。</Content>
+    <Content>以降、一度解説したものは省略します。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
