@@ -35,6 +35,8 @@
 - アクティビティ
 - クイックドラフト
 - WordPress イベントとニュース
+- 表示オプション `https://wordpress.org/documentation/article/administration-screens/#screen-options`
+- ヘルプ `https://wordpress.org/documentation/article/administration-screens/#help`
 
 ## ツールバー `https://wordpress.org/documentation/article/toolbar/` `https://wordpress.org/documentation/article/administration-screens/#toolbar-keeping-it-all-together`
 
@@ -52,13 +54,12 @@
   - サポート
   - フィードバック
 - サイト名
+- コマンドパレット
 - コメント数表示
 - 新規投稿等作成メニュー
 - アカウント情報メニュー
   - プロフィールを編集
   - ログアウト
-- 表示オプション `https://wordpress.org/documentation/article/administration-screens/#screen-options`
-- ヘルプ `https://wordpress.org/documentation/article/administration-screens/#help`
 
 ## メインナビゲーション（ナビゲーションメニュー）
 
@@ -94,6 +95,7 @@
 
 - テーマ `https://wordpress.org/documentation/article/appearance-themes-screen/`
 - エディター （サイトエディターが開く）
+- フォント（フォントライブラリが開く）`https://wordpress.org/documentation/article/the-font-library/`
 
 #### クラシックテーマを有効化している場合
 
@@ -101,6 +103,7 @@
 - デザイン （サイトエディターライクなスタイルとパターンの管理画面が開く）
 - カスタマイズ `https://wordpress.org/documentation/article/customizer/`
 - ウィジェット `https://wordpress.org/documentation/article/block-based-widgets-editor/` `https://wordpress.org/documentation/article/appearance-widgets-screen-classic-editor/`
+- フォント `https://wordpress.org/documentation/article/the-font-library/`
 - メニュー `https://wordpress.org/documentation/article/appearance-menus-screen/`
 - 背景（背景画像とカスタム背景）
 - テーマファイルエディター `https://wordpress.org/documentation/article/appearance-theme-file-editor-screen/`
@@ -130,6 +133,7 @@
 ### 設定
 
 - 一般 `https://wordpress.org/documentation/article/settings-general-screen/`
+- コネクタ `https://wordpress.org/documentation/article/settings-connectors-screen/`
 - 投稿設定 `https://wordpress.org/documentation/article/settings-writing-screen/`
 - 表示設定 `https://wordpress.org/documentation/article/settings-reading-screen/`
 - ディスカッション `https://wordpress.org/documentation/article/settings-discussion-screen/`
@@ -159,6 +163,13 @@
   - コマンドパレット
   - 表示
   - ズームアウト
+  - 設定（右サイドバー）
+    - テンプレートタブ
+      - テンプレートの情報
+      - コンテンツ
+      - デザイン
+    - ブロックタブ
+      - 選択しているブロックで設定可能な情報が表示される。詳しくはコアブロックを使ってみようで。
   - スタイル（右サイドバー）
     - スタイルブック
     - リビジョン
@@ -173,13 +184,6 @@
     - 影
     - レイアウト
     - ブロック
-  - 設定（右サイドバー）
-    - テンプレートタブ
-      - テンプレートの情報
-      - コンテンツ
-      - デザイン
-    - ブロックタブ
-      - 選択しているブロックで設定可能な情報が表示される。詳しくはコアブロックを使ってみようで。
   - 保存
   - オプション
     - トップツールバー
@@ -222,10 +226,10 @@
   - やり直す
   - ドキュメント概観
   - コマンドパレット
-  - 下書き保存
+  - 下書き保存（新規作成等未保存時のみ）
   - 表示
   - 設定
-  - 公開・更新
+  - 公開
   - オプション（サイトエディターにはないもののみ紹介）
     - フルスクリーンモード
     - パターンの管理
@@ -495,28 +499,6 @@
   - マージン
 - 枠線
   - 角丸
-
-# 簡単なウェブサイトを作ってみよう
-
-- 概要
-- 準備
-  - 完成ウェブサイトのイメージとウェブサイト構成
-  - 用意する投稿と固定ページ
-  - 本書に沿って制作をされる方へ
-  - 各種設定の確認
-      - 一般設定
-      - 表示設定
-  - 日本語フォントの導入
-  - 配色や要素の設定
-- テンプレートパーツのカスタマイズ
-  - テンプレートパーツの確認
-  - ヘッダーのカスタマイズ
-  - フッターのカスタマイズ
-- フロントページテンプレートの作成
-- 固定ページテンプレートのカスタマイズ
-- フロントページを作る
-- 業務内容ページを作る
-- まとめ
 
 # WordPress を運用するために知っておくと良いこと
 
