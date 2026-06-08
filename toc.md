@@ -1,17 +1,19 @@
 # はじめに
+
 - 主な対象とする読者
 - 本書では扱わない内容
 - なぜ本書を執筆しようと思ったのか
 - 執筆するにあたり意識したこと
 - 理解を深められる読み進め方
-    - WordPress Playground
-    - Local by Flywheel または Studio by WordPress.com
-    - ご自身が契約しているレンタルサーバー上
+  - WordPress Playground
+  - Local by Flywheel または Studio by WordPress.com
+  - ご自身が契約しているレンタルサーバー上
 - 本書内容の動作確認環境
 - サポートサイトについて
 - お問い合わせについて
 
 # WordPress とは
+
 - テーマとプラグイン
 - ブロックテーマとクラシックテーマ
 - 標準テーマとは
@@ -19,12 +21,15 @@
 - WordPress コミュニティ
 
 # WordPress の管理画面について
+
 ## 管理画面トップページ `https://wordpress.org/documentation/article/administration-screens/`
+
 - ツールバー
 - メインナビゲーション（またはナビゲーションメニュー）
 - ワークエリア `https://wordpress.org/documentation/article/dashboard-screen/`
 
 ## ダッシュボード `https://wordpress.org/documentation/article/administration-screens/#dashboard-information-central` `https://ja.wordpress.org/support/article/dashboard-screen/`
+
 - サイトヘルス
 - 概要
 - アクティビティ
@@ -32,56 +37,66 @@
 - WordPress イベントとニュース
 
 ## ツールバー `https://wordpress.org/documentation/article/toolbar/` `https://wordpress.org/documentation/article/administration-screens/#toolbar-keeping-it-all-together`
+
 - WordPress ロゴメニュー
-    - WordPress について
-        - 新着情報
-        - クレジット
-        - 自由について
-        - プライバシー
-        - 参加する
+  - WordPress について
+    - 新着情報
+    - クレジット
+    - 自由について
+    - プライバシー
     - 参加する
-    - WordPress.org
-    - ドキュメンテーション
-    - Learn WordPress
-    - サポート
-    - フィードバック
+  - 参加する
+  - WordPress.org
+  - ドキュメンテーション
+  - Learn WordPress
+  - サポート
+  - フィードバック
 - サイト名
 - コメント数表示
 - 新規投稿等作成メニュー
 - アカウント情報メニュー
-    - プロフィールを編集
-    - ログアウト
+  - プロフィールを編集
+  - ログアウト
 - 表示オプション `https://wordpress.org/documentation/article/administration-screens/#screen-options`
 - ヘルプ `https://wordpress.org/documentation/article/administration-screens/#help`
 
 ## メインナビゲーション（ナビゲーションメニュー）
+
 ### ダッシュボード
+
 - ホーム（上記ダッシュボードを参照）
 - 更新 `https://wordpress.org/documentation/article/dashboard-updates-screen/`
 
 ### 投稿
+
 - 投稿一覧 `https://wordpress.org/documentation/article/posts-screen/`
 - 投稿を追加（ブロックエディターを開く）
 - カテゴリー `https://wordpress.org/documentation/article/posts-categories-screen/`
 - タグ `https://wordpress.org/documentation/article/posts-tags-screen/`
 
 ### メディア
+
 - ライブラリ `https://wordpress.org/documentation/article/media-library-screen/`
 - メディアファイルを追加 `https://wordpress.org/documentation/article/media-add-new-screen/`
 
 ### 固定ページ
+
 - 固定ページ一覧 `https://wordpress.org/documentation/article/pages-screen/`
 - 固定ページを追加（ブロックエディターを開く）
 
 ### コメント
+
 - `https://wordpress.org/documentation/article/comments-screen/`
 
 ### 外観
+
 #### ブロックテーマを有効化している場合
+
 - テーマ `https://wordpress.org/documentation/article/appearance-themes-screen/`
 - エディター （サイトエディターが開く）
 
 #### クラシックテーマを有効化している場合
+
 - テーマ `https://wordpress.org/documentation/article/appearance-themes-screen/`
 - デザイン （サイトエディターライクなスタイルとパターンの管理画面が開く）
 - カスタマイズ `https://wordpress.org/documentation/article/customizer/`
@@ -91,15 +106,18 @@
 - テーマファイルエディター `https://wordpress.org/documentation/article/appearance-theme-file-editor-screen/`
 
 ### プラグイン
+
 - インストール済みプラグイン `https://wordpress.org/documentation/article/plugins-screen/`
 - プラグインを追加 `https://wordpress.org/documentation/article/plugins-add-new-screen/`
 
 ### ユーザー
+
 - ユーザー一覧 `https://wordpress.org/documentation/article/users-screen/`
 - ユーザーを追加 `https://wordpress.org/documentation/article/users-add-new-screen/`
 - プロフィール `https://wordpress.org/documentation/article/users-your-profile-screen/`
 
 ### ツール
+
 - 利用可能なツール `https://wordpress.org/documentation/article/tools-screen/`
 - インポート `https://wordpress.org/documentation/article/tools-import-screen/`
 - エクスポート `https://wordpress.org/documentation/article/tools-export-screen/`
@@ -110,6 +128,7 @@
 - プラグインファイルエディター ``
 
 ### 設定
+
 - 一般 `https://wordpress.org/documentation/article/settings-general-screen/`
 - 投稿設定 `https://wordpress.org/documentation/article/settings-writing-screen/`
 - 表示設定 `https://wordpress.org/documentation/article/settings-reading-screen/`
@@ -119,6 +138,7 @@
 - プライバシー `https://wordpress.org/documentation/article/settings-privacy-screen/`
 
 # サイトエディターについて `https://wordpress.org/documentation/article/site-editor/`
+
 - サイトエディターとは
 - サイトエディターにアクセスするためには
 - 左サイドバーのメニュー
@@ -193,6 +213,7 @@
         - ブロックの可視性を管理
 
 # ブロックエディターについて `https://wordpress.org/documentation/article/wordpress-block-editor/`
+
 - ブロックエディターとは
 - トップツールバー
   - WordPress ロゴメニュー
@@ -234,7 +255,9 @@
     - 選択しているブロックで利用できるメニューが表示される。詳しくはコアブロックを使ってみようで。
 
 # コアブロックを使ってみよう
+
 ## ツールバーとインスペクターについて
+
 - ツールバーについて
   - 変換
   - ドラッグハンドル
@@ -269,8 +292,11 @@
 - インスペクターについて（ブロックパネル、スタイルと設定）
 
 ## 段落ブロック
+
 - 伸縮する段落ブロック
+
 ### ツールバー
+
 - テキストの配置
 - 太字
 - イタリック
@@ -278,6 +304,7 @@
 - その他
 
 ### ブロックパネル
+
 - スタイル
 - 色
 - タイポグラフィ
@@ -286,8 +313,11 @@
 - 高度な設定
 
 ## 見出しブロック
+
 - 伸縮する見出しブロック
+
 ### ツールバー
+
 - 配置
 - テキストの配置
 - 太字
@@ -296,6 +326,7 @@
 - その他
 
 ### ブロックパネル
+
 - スタイル
 - 色
 - タイポグラフィ
@@ -304,15 +335,18 @@
 - 高度な設定
 
 ## リストブロック
+
 子ブロックとして「リスト項目ブロック」がある
 
 ### ツールバー
+
 - 順序なしリスト
 - 順序ありリスト
 - インデント解除
   - 一つ以上インデントされているリストブロックでのみ有効化になる
 
 ### ブロックパネル
+
 - スタイル
 - 色
 - タイポグラフィ
@@ -321,7 +355,9 @@
 - 高度な設定
 
 ## リスト項目ブロック
+
 ### ツールバー
+
 - インデント解除
 - インデント
 - 太字
@@ -329,6 +365,7 @@
 - リンク
 
 ### ブロックパネル
+
 - 色
 - タイポグラフィ
 - サイズ
@@ -336,7 +373,9 @@
 - 高度な設定
 
 ## 画像ブロック
+
 ### ツールバー
+
 - 配置
 - デュオトーンフィルターを適応
 - リンク
@@ -346,7 +385,9 @@
 - 置換
 
 ### ブロックパネル
+
 #### 設定タブ
+
 - 設定
   - 代替テキスト
   - アスペクト比
@@ -359,13 +400,16 @@
   - タイトル属性
 
 #### スタイルタブ
+
 - スタイル
 - フィルター
 - サイズ
 - 枠線と影
 
 ## カバーブロック
+
 ### ツールバー
+
 - 配置
 - デュオトーンフィルターを適応
 - コンテンツ位置を変更
@@ -373,7 +417,9 @@
 - 置換
 
 ### ブロックパネル
+
 #### 設定タブ
+
 - レイアウト
   - コンテンツ幅を使用するインナーブロック
   - コンテンツ幅
@@ -393,6 +439,7 @@
   - 許可されたブロック
 
 #### スタイルタブ
+
 - 色
   - テキスト
   - 見出し
@@ -411,7 +458,9 @@
   - 角丸
 
 ## メディアとテキスト
+
 ### ツールバー
+
 - 配置
 - 垂直配置を変更
 - メディアを左に表示（デフォルト）
@@ -420,7 +469,9 @@
 - 置換
 
 ### ブロックパネル
+
 #### 設定タブ
+
 - 設定
   - メディアの幅
   - モバイルでは縦に並べる
@@ -433,6 +484,7 @@
   - 許可されたブロック
 
 #### スタイルタブ
+
 - 色
   - テキスト
   - 背景
@@ -445,6 +497,7 @@
   - 角丸
 
 # 簡単なウェブサイトを作ってみよう
+
 - 概要
 - 準備
   - 完成ウェブサイトのイメージとウェブサイト構成
@@ -466,6 +519,7 @@
 - まとめ
 
 # WordPress を運用するために知っておくと良いこと
+
 - WordPressは「運用して育てる」CMS 
 - アップデートとバックアップは必須 
 - セキュリティは“ほどほど”が一番強い 
