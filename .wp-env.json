@@ -8,6 +8,6 @@
     "WPLANG": "ja"
   },
   "lifecycleScripts": {
-    "afterStart": "wp-env run cli wp language core install ja --activate"
+    "afterStart": "wp-env run cli wp language core install ja --activate && wp-env run cli wp option update blogname \"Start WordPress Book\""
   }
 }
