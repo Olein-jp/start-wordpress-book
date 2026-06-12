@@ -14,6 +14,7 @@ type Shot = {
   title?: string;
   url: string;
   output: string;
+  outputSuffix?: string | false;
   waitFor?: string;
   delay?: number;
   authState?: string | boolean;
@@ -39,12 +40,17 @@ type Scenario = {
     authState?: string | boolean;
     delay?: number;
     fullPage?: boolean;
+    outputSuffix?: string | false;
     viewport?: {
       width: number;
       height: number;
     };
   };
   shots: Shot[];
+};
+
+type ScreenshotConfig = {
+  defaults?: Scenario["defaults"];
 };
 
 async function runActions(page: Page, actions: Action[] = []) {
@@ -75,6 +81,31 @@ async function runActions(page: Page, actions: Action[] = []) {
 
 function resolveShotUrl(baseUrl: string, shotUrl: string) {
   return new URL(shotUrl, baseUrl).toString();
+}
+
+function applyOutputSuffix(output: string, outputSuffix: string | false | undefined) {
+  if (!outputSuffix) {
+    return output;
+  }
+
+  const extension = path.extname(output);
+  const basename = output.slice(0, -extension.length);
+
+  if (basename.endsWith(outputSuffix)) {
+    return output;
+  }
+
+  return `${basename}${outputSuffix}${extension}`;
+}
+
+function loadScreenshotConfig() {
+  const configPath = path.resolve("screenshots.config.yaml");
+
+  if (!fs.existsSync(configPath)) {
+    return {};
+  }
+
+  return yaml.parse(fs.readFileSync(configPath, "utf8")) as ScreenshotConfig;
 }
 
 function getDefaultAuthStatePath(baseUrl: string) {
@@ -153,6 +184,7 @@ async function main() {
   }
 
   const scenarioDir = path.dirname(scenarioPath);
+  const config = loadScreenshotConfig();
   const scenario = yaml.parse(fs.readFileSync(scenarioPath, "utf8")) as Scenario;
   const baseUrl = process.env.WP_BASE_URL || "http://localhost:8889";
 
@@ -164,12 +196,13 @@ async function main() {
 
   try {
     for (const shot of scenario.shots) {
-      const viewport = shot.viewport ?? scenario.defaults?.viewport;
+      const viewport =
+        shot.viewport ?? scenario.defaults?.viewport ?? config.defaults?.viewport;
       const context = await browser.newContext({
         storageState: await getStorageState(
           browser,
           baseUrl,
-          shot.authState ?? scenario.defaults?.authState
+          shot.authState ?? scenario.defaults?.authState ?? config.defaults?.authState
         ),
         viewport: viewport ?? {
           width: 1440,
@@ -192,11 +225,19 @@ async function main() {
         await page.waitForSelector(shot.waitFor);
       }
 
-      await page.waitForTimeout(shot.delay ?? scenario.defaults?.delay ?? 0);
+      await page.waitForTimeout(
+        shot.delay ?? scenario.defaults?.delay ?? config.defaults?.delay ?? 0
+      );
 
       await runActions(page, shot.actions);
 
-      const outputPath = path.resolve(scenarioDir, shot.output);
+      const output = applyOutputSuffix(
+        shot.output,
+        shot.outputSuffix ??
+          scenario.defaults?.outputSuffix ??
+          config.defaults?.outputSuffix
+      );
+      const outputPath = path.resolve(scenarioDir, output);
 
       fs.mkdirSync(path.dirname(outputPath), {
         recursive: true,
@@ -209,7 +250,11 @@ async function main() {
       } else {
         await page.screenshot({
           path: outputPath,
-          fullPage: shot.fullPage ?? scenario.defaults?.fullPage ?? false,
+          fullPage:
+            shot.fullPage ??
+            scenario.defaults?.fullPage ??
+            config.defaults?.fullPage ??
+            false,
           clip: shot.screenshot?.clip,
         });
       }

@@ -22,6 +22,8 @@ npm run env:start
 npm run screenshots
 ```
 
+`screenshots.config.yaml` の `defaults.outputSuffix` で、書籍バージョン用の画像ファイル名サフィックスをまとめて指定できます。章ごとに変えたい場合は、各 `article/*/screenshots.yaml` の `defaults.outputSuffix` で上書きできます。
+
 データベースをリポジトリ管理用にエクスポートする場合は以下を実行します。
 
 ```bash
