@@ -1,0 +1,13 @@
+{
+  "port": 8889,
+  "testsEnvironment": false,
+  "phpVersion": "8.3",
+  "config": {
+    "WP_DEBUG": true,
+    "SCRIPT_DEBUG": true,
+    "WPLANG": "ja"
+  },
+  "lifecycleScripts": {
+    "afterStart": "wp-env run cli wp language core install ja --activate"
+  }
+}

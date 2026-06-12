@@ -4,6 +4,17 @@
   "main": "index.js",
   "scripts": {
     "textlint": "npx textlint article/**/**.md --fix",
+    "env:start": "wp-env start",
+    "env:start:update": "wp-env start --update",
+    "env:stop": "wp-env stop",
+    "env:destroy": "wp-env destroy",
+    "env:status": "wp-env status",
+    "env:cli": "wp-env run cli wp",
+    "db:export": "node scripts/db-export.mjs",
+    "db:import": "node scripts/db-import.mjs",
+    "screenshots:login": "tsx scripts/screenshot-login.ts",
+    "screenshots:01": "tsx scripts/screenshot-capture.ts article/01/screenshots.yaml",
+    "screenshots": "npm-run-all screenshots:01",
     "pandoc:00": "for f in article/00/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc:01": "for f in article/01/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
     "pandoc:02": "for f in article/02/*.md; do pandoc \"$f\" --resource-path=.:src:images -f markdown -t icml -s -o \"${f%.md}.icml\" 2>/dev/null; done",
@@ -16,10 +27,15 @@
   },
   "author": "Koji Kuno",
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@wordpress/env": "^11.8.0",
     "npm-run-all": "^4.1.5",
+    "playwright": "^1.60.0",
     "textlint": "^15.2.2",
     "textlint-rule-ja-no-space-between-full-width": "^2.4.2",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
-    "textlint-rule-preset-ja-technical-writing": "^12.0.2"
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "tsx": "^4.22.4",
+    "yaml": "^2.9.0"
   }
 }

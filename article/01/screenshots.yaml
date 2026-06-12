@@ -1,0 +1,25 @@
+defaults:
+  viewport:
+    width: 1920
+    height: 1440
+  delay: 500
+
+shots:
+  - id: 1-1-001
+    title: WordPress.org top page
+    url: https://wordpress.org/
+    output: images/1-1-001__70.jpg
+    authState: false
+    waitFor: body
+  - id: 1-1-002
+    title: WordPress.com top page
+    url: https://wordpress.com/
+    output: images/1-1-002__70.jpg
+    authState: false
+    waitFor: body
+  - id: 1-1-003
+    title: WordPress dashboard
+    url: /wp-admin/
+    output: images/1-1-003__70.jpg
+    authState: true
+    waitFor: "#wpbody-content"

@@ -1,2 +1,4 @@
 node_modules
 *.ai
+.DS_Store
+screenshots/auth/
