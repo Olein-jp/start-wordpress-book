@@ -12,6 +12,7 @@ type Action =
 type Shot = {
   id: string;
   title?: string;
+  memo?: string | string[];
   url: string;
   output: string;
   outputSuffix?: string | false;
