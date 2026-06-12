@@ -22,7 +22,15 @@ npm run env:start
 npm run screenshots
 ```
 
+個別の章だけ撮影したい場合は以下のように実行します。
+
+```bash
+npm run screenshots:02
+```
+
 `screenshots.config.yaml` の `defaults.outputSuffix` で、書籍バージョン用の画像ファイル名サフィックスをまとめて指定できます。章ごとに変えたい場合は、各 `article/*/screenshots.yaml` の `defaults.outputSuffix` で上書きできます。
+
+各スクリーンショットには、必要に応じて `memo` を残せます。`memo` は撮影処理には使われず、制作上のメモとして扱います。
 
 データベースをリポジトリ管理用にエクスポートする場合は以下を実行します。
 
