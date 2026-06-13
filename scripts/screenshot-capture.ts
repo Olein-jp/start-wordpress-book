@@ -27,6 +27,15 @@ type Shot = {
   actions?: Action[];
   screenshot?: {
     selector?: string;
+    zoom?: number;
+    deviceScaleFactor?: number;
+    outputScale?: number;
+    focus?: {
+      selector: string;
+      width?: number;
+      height?: number;
+      padding?: number;
+    };
     clip?: {
       x: number;
       y: number;
@@ -107,6 +116,122 @@ function loadScreenshotConfig() {
   }
 
   return yaml.parse(fs.readFileSync(configPath, "utf8")) as ScreenshotConfig;
+}
+
+function getClipAroundBox(
+  box: { x: number; y: number; width: number; height: number },
+  viewport: { width: number; height: number },
+  options: { width?: number; height?: number; padding?: number } = {}
+) {
+  const padding = options.padding ?? 0;
+  const clipWidth = Math.min(options.width ?? box.width + padding * 2, viewport.width);
+  const clipHeight = Math.min(options.height ?? box.height + padding * 2, viewport.height);
+  const centerX = box.x + box.width / 2;
+  const centerY = box.y + box.height / 2;
+  const x = Math.max(0, Math.min(centerX - clipWidth / 2, viewport.width - clipWidth));
+  const y = Math.max(0, Math.min(centerY - clipHeight / 2, viewport.height - clipHeight));
+
+  return {
+    x,
+    y,
+    width: clipWidth,
+    height: clipHeight,
+  };
+}
+
+function getFocusedCrop(
+  box: { x: number; y: number; width: number; height: number },
+  viewport: { width: number; height: number },
+  options: {
+    width?: number;
+    height?: number;
+    padding?: number;
+    zoom?: number;
+    outputScale?: number;
+  } = {}
+) {
+  const targetWidth = options.width ?? viewport.width;
+  const targetHeight = options.height ?? viewport.height;
+  const zoom = Math.max(options.zoom ?? 1, 1);
+  const outputScale = Math.max(options.outputScale ?? 1, 1);
+  const padding = options.padding ?? 0;
+  const sourceWidth = Math.min(targetWidth / zoom + padding * 2, viewport.width);
+  const sourceHeight = Math.min(targetHeight / zoom + padding * 2, viewport.height);
+  const centerX = box.x + box.width / 2;
+  const centerY = box.y + box.height / 2;
+  const x = Math.max(0, Math.min(centerX - sourceWidth / 2, viewport.width - sourceWidth));
+  const y = Math.max(0, Math.min(centerY - sourceHeight / 2, viewport.height - sourceHeight));
+
+  return {
+    source: {
+      x,
+      y,
+      width: sourceWidth,
+      height: sourceHeight,
+    },
+    output: {
+      width: targetWidth * outputScale,
+      height: targetHeight * outputScale,
+    },
+  };
+}
+
+async function saveZoomedCrop(
+  page: Page,
+  outputPath: string,
+  crop: ReturnType<typeof getFocusedCrop>
+) {
+  const screenshot = await page.screenshot();
+  const dataUrl = `data:image/png;base64,${screenshot.toString("base64")}`;
+  const mimeType = /\.(jpe?g)$/i.test(outputPath) ? "image/jpeg" : "image/png";
+  const renderPage = await page.context().newPage();
+
+  try {
+    const renderedDataUrl = await renderPage.evaluate(
+      async ({ dataUrl, crop, mimeType }) => {
+        const image = new Image();
+        image.src = dataUrl;
+        await image.decode();
+
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(crop.output.width);
+        canvas.height = Math.round(crop.output.height);
+
+        const context = canvas.getContext("2d");
+
+        if (!context) {
+          throw new Error("Failed to create canvas context.");
+        }
+
+        context.imageSmoothingEnabled = true;
+        context.imageSmoothingQuality = "high";
+        const scaleX = image.naturalWidth / window.innerWidth;
+        const scaleY = image.naturalHeight / window.innerHeight;
+
+        context.drawImage(
+          image,
+          crop.source.x * scaleX,
+          crop.source.y * scaleY,
+          crop.source.width * scaleX,
+          crop.source.height * scaleY,
+          0,
+          0,
+          crop.output.width,
+          crop.output.height
+        );
+
+        return canvas.toDataURL(mimeType, 0.92);
+      },
+      { dataUrl, crop, mimeType }
+    );
+
+    fs.writeFileSync(
+      outputPath,
+      Buffer.from(renderedDataUrl.replace(/^data:image\/\w+;base64,/, ""), "base64")
+    );
+  } finally {
+    await renderPage.close();
+  }
 }
 
 function getDefaultAuthStatePath(baseUrl: string) {
@@ -209,7 +334,7 @@ async function main() {
           width: 1440,
           height: 1200,
         },
-        deviceScaleFactor: 1,
+        deviceScaleFactor: shot.screenshot?.deviceScaleFactor ?? 1,
         locale: "ja-JP",
         timezoneId: "Asia/Tokyo",
       });
@@ -244,7 +369,39 @@ async function main() {
         recursive: true,
       });
 
-      if (shot.screenshot?.selector) {
+      if (shot.screenshot?.focus) {
+        const resolvedViewport = viewport ?? { width: 1440, height: 1200 };
+        const focusLocator = page.locator(shot.screenshot.focus.selector);
+        await focusLocator.scrollIntoViewIfNeeded();
+        const box = await focusLocator.boundingBox();
+
+        if (!box) {
+          throw new Error(`Focus selector was not found: ${shot.screenshot.focus.selector}`);
+        }
+
+        if (shot.screenshot.zoom) {
+          await saveZoomedCrop(
+            page,
+            outputPath,
+            getFocusedCrop(box, resolvedViewport, {
+              width: shot.screenshot.focus.width,
+              height: shot.screenshot.focus.height,
+              padding: shot.screenshot.focus.padding,
+              zoom: shot.screenshot.zoom,
+              outputScale: shot.screenshot.outputScale,
+            })
+          );
+        } else {
+          await page.screenshot({
+            path: outputPath,
+            clip: getClipAroundBox(box, resolvedViewport, {
+              width: shot.screenshot.focus.width,
+              height: shot.screenshot.focus.height,
+              padding: shot.screenshot.focus.padding,
+            }),
+          });
+        }
+      } else if (shot.screenshot?.selector) {
         await page.locator(shot.screenshot.selector).screenshot({
           path: outputPath,
         });

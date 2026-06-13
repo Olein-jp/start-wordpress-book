@@ -32,6 +32,17 @@ npm run screenshots:02
 
 各スクリーンショットには、必要に応じて `memo` を残せます。`memo` は撮影処理には使われず、制作上のメモとして扱います。
 
+`screenshot.focus` と `screenshot.zoom` を組み合わせると、通常のページレイアウトを保ったまま指定要素の周辺だけを拡大して書き出せます。`focus.width` / `focus.height` を省略すると、書き出し画角は `viewport` と同じになります。拡大時の画質を上げたい場合は、`deviceScaleFactor` で元スクリーンショットの密度を上げ、`outputScale` で最終画像のピクセル数を増やします。
+
+```yaml
+screenshot:
+  zoom: 1.5
+  deviceScaleFactor: 2
+  outputScale: 2
+  focus:
+    selector: "#dashboard_site_health"
+```
+
 データベースをリポジトリ管理用にエクスポートする場合は以下を実行します。
 
 ```bash
