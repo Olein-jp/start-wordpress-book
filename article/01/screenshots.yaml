@@ -5,21 +5,21 @@ defaults:
   delay: 500
 
 shots:
-  - id: 1-1-001
+  - id: 1-1-wordpress-org-top-page
     title: WordPress.org top page
     url: https://wordpress.org/
-    output: images/1-1-001.jpg
+    output: images/1-1-wordpress-org-top-page.jpg
     authState: false
     waitFor: body
-  - id: 1-1-002
+  - id: 1-1-wordpress-com-top-page
     title: WordPress.com top page
     url: https://wordpress.com/
-    output: images/1-1-002.jpg
+    output: images/1-1-wordpress-com-top-page.jpg
     authState: false
     waitFor: body
-  - id: 1-1-003
+  - id: 1-1-wordpress-dashboard
     title: WordPress dashboard
     url: /wp-admin/
-    output: images/1-1-003.jpg
+    output: images/1-1-wordpress-dashboard.jpg
     authState: true
     waitFor: "#wpbody-content"
