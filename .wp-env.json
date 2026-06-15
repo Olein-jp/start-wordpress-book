@@ -1,13 +1,21 @@
 {
+  "core": "WordPress/WordPress#7.0",
   "port": 8889,
   "testsEnvironment": false,
   "phpVersion": "8.3",
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.2.zip"
+  ],
+  "themes": [
+    "https://downloads.wordpress.org/theme/twentytwentyfive.1.4.zip",
+    "https://downloads.wordpress.org/theme/twentytwentyone.2.7.zip"
+  ],
   "config": {
     "WP_DEBUG": true,
     "SCRIPT_DEBUG": true,
     "WPLANG": "ja"
   },
   "lifecycleScripts": {
-    "afterStart": "wp-env run cli wp language core install ja --activate && wp-env run cli wp option update blogname \"Start WordPress Book\""
+    "afterStart": "wp-env run cli wp language core install ja --activate && wp-env run cli wp theme activate twentytwentyfive && wp-env run cli wp option update blogname \"Start WordPress Book\""
   }
 }
