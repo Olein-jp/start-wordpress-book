@@ -1,5 +1,5 @@
 {
-  "core": "WordPress/WordPress#7.0",
+  "core": "https://downloads.wordpress.org/release/ja/wordpress-7.0.zip",
   "port": 8889,
   "testsEnvironment": false,
   "phpVersion": "8.3",
