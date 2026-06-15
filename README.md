@@ -28,9 +28,19 @@ npm run screenshots
 npm run screenshots:02
 ```
 
-`screenshots.config.yaml` の `defaults.outputSuffix` で、書籍バージョン用の画像ファイル名サフィックスをまとめて指定できます。章ごとに変えたい場合は、各 `article/*/screenshots.yaml` の `defaults.outputSuffix` で上書きできます。
+各スクリーンショットは、`article/*/screenshots.yaml` の `output` に指定したパスへそのまま書き出されます。書籍バージョンごとに画像を分けたい場合は、`output: images/7.0/example.jpg` のように保存先ディレクトリまで含めて指定します。
 
 各スクリーンショットには、必要に応じて `memo` を残せます。`memo` は撮影処理には使われず、制作上のメモとして扱います。
+
+特定の要素にマウスをホバーした状態で撮影したい場合は、`actions` に `hover` を指定します。ホバー後に表示されるメニューやツールチップを待つ場合は、続けて `delay` を指定します。
+
+```yaml
+actions:
+  - type: hover
+    selector: "#wp-admin-bar-site-name"
+  - type: delay
+    ms: 300
+```
 
 `screenshot.focus` と `screenshot.zoom` を組み合わせると、通常のページレイアウトを保ったまま指定要素の周辺だけを拡大して書き出せます。`focus.width` / `focus.height` を省略すると、書き出し画角は `viewport` と同じになります。拡大時の画質を上げたい場合は、`deviceScaleFactor` で元スクリーンショットの密度を上げ、`outputScale` で最終画像のピクセル数を増やします。
 

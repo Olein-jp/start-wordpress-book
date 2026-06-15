@@ -8,18 +8,18 @@ shots:
   - id: 1-1-wordpress-org-top-page
     title: WordPress.org top page
     url: https://wordpress.org/
-    output: images/1-1-wordpress-org-top-page.jpg
+    output: images/7.0/1-1-wordpress-org-top-page.jpg
     authState: false
     waitFor: body
   - id: 1-1-wordpress-com-top-page
     title: WordPress.com top page
     url: https://wordpress.com/
-    output: images/1-1-wordpress-com-top-page.jpg
+    output: images/7.0/1-1-wordpress-com-top-page.jpg
     authState: false
     waitFor: body
   - id: 1-1-wordpress-dashboard
     title: WordPress dashboard
     url: /wp-admin/
-    output: images/1-1-wordpress-dashboard.jpg
+    output: images/7.0/1-1-wordpress-dashboard.jpg
     authState: true
     waitFor: "#wpbody-content"

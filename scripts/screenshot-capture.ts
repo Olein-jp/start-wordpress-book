@@ -5,6 +5,7 @@ import yaml from "yaml";
 
 type Action =
   | { type: "click"; selector: string }
+  | { type: "hover"; selector: string }
   | { type: "waitFor"; selector: string }
   | { type: "delay"; ms: number }
   | { type: "keyboard"; key?: string; text?: string };
@@ -15,7 +16,6 @@ type Shot = {
   memo?: string | string[];
   url: string;
   output: string;
-  outputSuffix?: string | false;
   waitFor?: string;
   delay?: number;
   authState?: string | boolean;
@@ -50,7 +50,6 @@ type Scenario = {
     authState?: string | boolean;
     delay?: number;
     fullPage?: boolean;
-    outputSuffix?: string | false;
     viewport?: {
       width: number;
       height: number;
@@ -67,6 +66,10 @@ async function runActions(page: Page, actions: Action[] = []) {
   for (const action of actions) {
     if (action.type === "click") {
       await page.locator(action.selector).click();
+    }
+
+    if (action.type === "hover") {
+      await page.locator(action.selector).hover();
     }
 
     if (action.type === "waitFor") {
@@ -91,21 +94,6 @@ async function runActions(page: Page, actions: Action[] = []) {
 
 function resolveShotUrl(baseUrl: string, shotUrl: string) {
   return new URL(shotUrl, baseUrl).toString();
-}
-
-function applyOutputSuffix(output: string, outputSuffix: string | false | undefined) {
-  if (!outputSuffix) {
-    return output;
-  }
-
-  const extension = path.extname(output);
-  const basename = output.slice(0, -extension.length);
-
-  if (basename.endsWith(outputSuffix)) {
-    return output;
-  }
-
-  return `${basename}${outputSuffix}${extension}`;
 }
 
 function loadScreenshotConfig() {
@@ -242,6 +230,8 @@ function getDefaultAuthStatePath(baseUrl: string) {
   return `screenshots/auth/${origin}.json`;
 }
 
+const verifiedStorageStates = new Set<string>();
+
 async function createAuthState(browser: Browser, baseUrl: string, storageState: string) {
   const username = process.env.WP_USER || "admin";
   const password = process.env.WP_PASSWORD || "password";
@@ -277,6 +267,41 @@ async function createAuthState(browser: Browser, baseUrl: string, storageState: 
   }
 }
 
+async function isStorageStateValid(
+  browser: Browser,
+  baseUrl: string,
+  storageState: string
+) {
+  const context = await browser.newContext({
+    storageState,
+    viewport: {
+      width: 1440,
+      height: 1200,
+    },
+    deviceScaleFactor: 1,
+    locale: "ja-JP",
+    timezoneId: "Asia/Tokyo",
+  });
+  const page = await context.newPage();
+
+  try {
+    await page.goto(new URL("/wp-admin/", baseUrl).toString(), {
+      waitUntil: "domcontentloaded",
+    });
+
+    try {
+      await page.waitForSelector("#wpbody-content", {
+        timeout: 5000,
+      });
+      return true;
+    } catch {
+      return false;
+    }
+  } finally {
+    await context.close();
+  }
+}
+
 async function getStorageState(
   browser: Browser,
   baseUrl: string,
@@ -296,6 +321,13 @@ async function getStorageState(
   if (!fs.existsSync(storageState)) {
     console.log(`Auth state not found. Logging in: ${storageState}`);
     await createAuthState(browser, baseUrl, storageState);
+  } else if (!verifiedStorageStates.has(storageState)) {
+    if (!(await isStorageStateValid(browser, baseUrl, storageState))) {
+      console.log(`Auth state expired. Logging in again: ${storageState}`);
+      await createAuthState(browser, baseUrl, storageState);
+    }
+
+    verifiedStorageStates.add(storageState);
   }
 
   return storageState;
@@ -357,13 +389,7 @@ async function main() {
 
       await runActions(page, shot.actions);
 
-      const output = applyOutputSuffix(
-        shot.output,
-        shot.outputSuffix ??
-          scenario.defaults?.outputSuffix ??
-          config.defaults?.outputSuffix
-      );
-      const outputPath = path.resolve(scenarioDir, output);
+      const outputPath = path.resolve(scenarioDir, shot.output);
 
       fs.mkdirSync(path.dirname(outputPath), {
         recursive: true,

@@ -148,7 +148,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-001-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wordpress-dashboard-admin-bar-lined.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -221,7 +221,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-002-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-about.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -268,7 +268,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-003-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-credit.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -315,7 +315,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-004-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-freedoms.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -404,7 +404,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-005-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-privacy.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -457,7 +457,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="300" Bottom="200" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-006-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-contribute.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -654,7 +654,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-007-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-site-name-hover.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -677,8 +677,8 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#更新" Name="Destination" DestinationUniqueKey="1" />
-    <Content>更新</Content>
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#コマンドパレット" Name="Destination" DestinationUniqueKey="1" />
+    <Content>コマンドパレット</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -704,7 +704,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-008-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-command-palette.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -712,13 +712,13 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>更新可能なものがある場合のみ表示される</Content>
+    <Content>クリックするとコマンドパレットが表示される</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>WordPress 本体、インストール済みのテーマやプラグインの中で、更新が可能なものがある場合に、こちらに更新マークと更新可能なプロダクトの数が表示されます。</Content>
+    <Content>コマンドパレットへのアクセスができます。管理画面内のさまざまなページへ簡単に移動できます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -751,7 +751,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-009-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-comments.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -798,7 +798,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-010-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-new-content.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -845,7 +845,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/2-3-011-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-my-account.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>

@@ -1,0 +1,205 @@
+defaults:
+  viewport:
+    width: 1920
+    height: 1440
+  delay: 500
+
+shots:
+  - id: 2-1-wordpress-dashboard-lined
+    title: WordPress ダッシュボード
+    memo: 3つのエリアを示す補足作図を追加する
+    url: /wp-admin/
+    output: images/7.0/2-1-wordpress-dashboard-lined.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-2-wordpress-dashboard-normal
+    title: WordPress ダッシュボード
+    url: /wp-admin/
+    output: images/7.0/2-2-wordpress-dashboard-normal.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-2-wordpress-dashboard-site-health
+    title: WordPress ダッシュボード サイトヘルスステータス拡大
+    memo: サイトヘルスステータスの拡大部分を罫線で囲う
+    url: /wp-admin/
+    output: images/7.0/2-2-wordpress-dashboard-site-health.jpg
+    authState: true
+    waitFor: "#dashboard_site_health"
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#dashboard_site_health"
+  - id: 2-2-wordpress-dashboard-right-now
+    title: WordPress ダッシュボード 概要
+    memo: 概要の拡大部分を罫線で囲う
+    url: /wp-admin/
+    output: images/7.0/2-2-wordpress-dashboard-right-now.jpg
+    authState: true
+    waitFor: "#dashboard_right_now"
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#dashboard_right_now"
+  - id: 2-2-wordpress-dashboard-activity
+    title: WordPress ダッシュボード アクティビティ拡大
+    memo: アクティビティの拡大部分を罫線で囲う
+    url: /wp-admin/
+    output: images/7.0/2-2-wordpress-dashboard-activity.jpg
+    authState: true
+    waitFor: "#dashboard_activity"
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#dashboard_activity"
+  - id: 2-2-wordpress-dashboard-quick-draft
+    title: WordPress ダッシュボード クイックドラフト拡大
+    memo: クイックドラフトの拡大部分を罫線で囲う
+    url: /wp-admin/
+    output: images/7.0/2-2-wordpress-dashboard-quick-draft.jpg
+    authState: true
+    waitFor: "#dashboard_quick_press"
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#dashboard_quick_press"
+  - id: 2-2-wordpress-dashboard-wordpress-event
+    title: WordPress ダッシュボード WordPressイベント
+    memo: WordPressイベントの拡大部分を罫線で囲う
+    url: /wp-admin/
+    output: images/7.0/2-2-wordpress-dashboard-wordpress-event.jpg
+    authState: true
+    waitFor: "#dashboard_primary"
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#dashboard_primary"
+  - id: 2-3-wordpress-dashboard-admin-bar-lined
+    title: WordPress ダッシュボード アドミンバー
+    memo: アドミンバーに罫線を入れる
+    url: /wp-admin/
+    output: images/7.0/2-3-wordpress-dashboard-admin-bar-lined.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-3-wp-admin-bar-about
+    title: アドミンバー WordPressについて
+    url: /wp-admin/about.php
+    output: images/7.0/2-3-wp-admin-bar-about.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-3-wp-admin-bar-credit
+    title: アドミンバー クレジット（貢献者）
+    url: /wp-admin/credits.php
+    output: images/7.0/2-3-wp-admin-bar-credit.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-3-wp-admin-bar-freedoms
+    title: アドミンバー 自由について
+    url: /wp-admin/freedoms.php
+    output: images/7.0/2-3-wp-admin-bar-freedoms.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-3-wp-admin-bar-privacy
+    title: アドミンバー プライバシー
+    url: /wp-admin/privacy.php
+    output: images/7.0/2-3-wp-admin-bar-privacy.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-3-wp-admin-bar-contribute
+    title: アドミンバー 参加する
+    url: /wp-admin/contribute.php
+    output: images/7.0/2-3-wp-admin-bar-contribute.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-3-wp-admin-bar-site-name-hover
+    memo: サイト名と「サイトを表示」を罫線で囲む
+    title: アドミンバー サイト名ホバー
+    url: /wp-admin/
+    output: images/7.0/2-3-wp-admin-bar-site-name-hover.jpg
+    authState: true
+    waitFor: "#wp-admin-bar-site-name"
+    screenshot:
+      zoom: 2.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#wp-admin-bar-site-name"
+    actions:
+    - type: hover
+      selector: "#wp-admin-bar-site-name"
+    - type: delay
+      ms: 300
+  - id: 2-3-wp-admin-bar-command-palette
+    title: アドミンバー コマンドパレット
+    url: /wp-admin/
+    output: images/7.0/2-3-wp-admin-bar-command-palette.jpg
+    authState: true
+    waitFor: "#wp-admin-bar-command-palette"
+    screenshot:
+      zoom: 2.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#wp-admin-bar-command-palette"
+  - id: 2-3-wp-admin-bar-comments
+    title: アドミンバー コメント
+    url: /wp-admin/
+    output: images/7.0/2-3-wp-admin-bar-comments.jpg
+    authState: true
+    waitFor: "#wp-admin-bar-comments"
+    screenshot:
+      zoom: 2.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#wp-admin-bar-comments"
+  - id: 2-3-wp-admin-bar-new-content
+    title: アドミンバー 新規コンテンツ
+    url: /wp-admin/
+    output: images/7.0/2-3-wp-admin-bar-new-content.jpg
+    authState: true
+    waitFor: "#wp-admin-bar-new-content"
+    screenshot:
+      zoom: 2.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#wp-admin-bar-new-content"
+    actions:
+    - type: hover
+      selector: "#wp-admin-bar-new-content"
+    - type: delay
+      ms: 300
+  - id: 2-3-wp-admin-bar-my-account
+    title: アドミンバー プロフィール
+    url: /wp-admin/
+    output: images/7.0/2-3-wp-admin-bar-my-account.jpg
+    authState: true
+    waitFor: "#wp-admin-bar-my-account"
+    screenshot:
+      zoom: 2.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#wp-admin-bar-my-account"
+    actions:
+    - type: hover
+      selector: "#wp-admin-bar-my-account"
+    - type: delay
+      ms: 300
+  - id: 2-4-wordpress-dashboard-sidebar-lined
+    title: WordPress ダッシュボード左サイドバー
+    memo: 左サイドバーに罫線で作図する
+    url: /wp-admin/
+    output: images/7.0/2-4-wordpress-dashboard-sidebar-lined.jpg
+    authState: true
+    waitFor: "#wpbody-content"
