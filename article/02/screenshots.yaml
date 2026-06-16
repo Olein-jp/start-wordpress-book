@@ -203,3 +203,512 @@ shots:
     output: images/7.0/2-4-wordpress-dashboard-sidebar-lined.jpg
     authState: true
     waitFor: "#wpbody-content"
+  - id: 2-4-wordpress-update-core
+    title: WordPress ダッシュボード 更新
+    url: /wp-admin/update-core.php?force-check=1
+    output: images/7.0/2-4-wordpress-update-core.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    delay: 1000
+    wpPlugins:
+      - slug: wp-multibyte-patch
+        version: "2.9.2"
+      - slug: contact-form-7
+        version: "6.1.5"
+    wpTheme:
+      slug: twentytwentyone
+      version: "2.7"
+    afterSnap:
+      wpUpdates:
+        plugins: true
+        themes: true
+      wpTheme: twentytwentyfive
+  - id: 2-4-wordpress-update-core-minor-update-setting
+    title: WordPress コアの自動更新設定（マイナーアップデート有効）
+    url: /wp-admin/update-core.php
+    output: images/7.0/2-4-wordpress-update-core-minor-update-setting.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    wpOptions:
+      auto_update_core_major: disabled
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      clip:
+        x: 0
+        y: 0
+        width: 960
+        height: 720
+  - id: 2-4-wordpress-update-core-major-update-setting
+    title: WordPress コアの自動更新設定（メジャーアップデート有効）
+    url: /wp-admin/update-core.php
+    output: images/7.0/2-4-wordpress-update-core-major-update-setting.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    wpOptions:
+      auto_update_core_major: enabled
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      clip:
+        x: 0
+        y: 0
+        width: 960
+        height: 720
+  - id: 2-4-posts-index
+    title: 投稿一覧
+    url: /wp-admin/edit.php
+    output: images/7.0/2-4-posts-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-posts-index-click-options
+    title: 投稿一覧 表示オプション
+    url: /wp-admin/edit.php
+    output: images/7.0/2-4-posts-index-click-options.jpg
+    authState: true
+    waitFor: "#posts-filter"
+    screenshot:
+      zoom: 2
+      deviceScaleFactor: 2
+      outputScale: 2
+      clip:
+        x: 0
+        y: 0
+        width: 960
+        height: 720
+    actions:
+    - type: click
+      selector: "#show-settings-link"
+    - type: delay
+      ms: 300
+  - id: 2-4-posts-index-hover-post-area
+    title: 投稿一覧 投稿エリアホバー
+    url: /wp-admin/edit.php
+    output: images/7.0/2-4-posts-index-hover-post-area.jpg
+    authState: true
+    waitFor: "#posts-filter"
+    screenshot:
+      zoom: 1.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      clip:
+        x: 0
+        y: 0
+        width: 1440
+        height: 1080
+    actions:
+    - type: hover
+      selector: "#the-list > tr"
+    - type: delay
+      ms: 300
+  - id: 2-4-posts-index-click-quick-edit
+    title: 投稿一覧 クイック編集
+    url: /wp-admin/edit.php
+    output: images/7.0/2-4-posts-index-click-quick-edit.jpg
+    authState: true
+    waitFor: "#posts-filter"
+    actions:
+    - type: click
+      selector: ".button-link.editinline"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-posts-add-new-post-full-screen
+    title: ブロックエディターを開いた画面
+    url: /wp-admin/post-new.php
+    output: images/7.0/2-4-posts-add-new-post-full-screen.jpg
+    authState: true
+    waitFor: ".edit-post-header"
+  - id: 2-4-categories-index
+    title: カテゴリー一覧
+    url: /wp-admin/edit-tags.php?taxonomy=category
+    output: images/7.0/2-4-categories-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-edit-category
+    title: カテゴリー編集
+    url: /wp-admin/term.php?taxonomy=category&tag_ID=1&post_type=post&wp_http_referer=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dcategory
+    output: images/7.0/2-4-edit-category.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tags-index
+    title: タグ一覧
+    url: /wp-admin/edit-tags.php?taxonomy=post_tag
+    output: images/7.0/2-4-tags-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-media-library-grid-view
+    title: メディアライブラリー グリッド表示
+    url: /wp-admin/upload.php?mode=grid
+    output: images/7.0/2-4-media-library-grid-view.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-media-library-list-view
+    title: メディアライブラリー リスト表示
+    url: /wp-admin/upload.php?mode=list
+    output: images/7.0/2-4-media-library-list-view.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-media-modal
+    title: メディアライブラリー メディアモーダル
+    url: /wp-admin/upload.php?mode=grid
+    output: images/7.0/2-4-media-modal.jpg
+    authState: true
+    waitFor: ".attachments-wrapper > .attachments > li:first-child"
+    actions:
+    - type: click
+      selector: ".attachments-wrapper > .attachments > li:first-child"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-media-modal-image-details
+    title: メディアライブラリー メディアモーダル さらに表示
+    url: /wp-admin/post.php?post=10&action=edit
+    output: images/7.0/2-4-media-modal-image-details.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-media-add-new
+    title: メディアライブラリー 新規追加
+    url: /wp-admin/media-new.php
+    output: images/7.0/2-4-media-add-new.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-media-add-new-single-file
+    title: メディアライブラリー 単一ファイル新規追加
+    url: /wp-admin/media-new.php
+    output: images/7.0/2-4-media-add-new-single-file.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    actions:
+    - type: click
+      selector: ".upload-flash-bypass > button"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-pages-index
+    title: 固定ページ一覧
+    url: /wp-admin/edit.php?post_type=page
+    output: images/7.0/2-4-pages-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-pages-add-new-page-full-screen
+    title: 固定ページ新規追加 ブロックエディターを開いた画面
+    url: /wp-admin/post-new.php?post_type=page
+    output: images/7.0/2-4-pages-add-new-page-full-screen.jpg
+    authState: true
+    waitFor: ".edit-post-header"
+  - id: 2-4-comments-index
+    title: コメント一覧
+    url: /wp-admin/edit-comments.php
+    output: images/7.0/2-4-comments-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-comments-index-hover-comment-area
+    title: コメント一覧 即時アクション
+    url: /wp-admin/edit-comments.php
+    output: images/7.0/2-4-comments-index-hover-comment-area.jpg
+    authState: true
+    waitFor: "#the-comment-list > tr"
+    actions:
+    - type: hover
+      selector: "#the-comment-list > tr"
+    - type: delay
+      ms: 300
+  - id: 2-4-appearance-themes-menu-block-theme
+    title: 外観 テーマメニュー ブロックテーマ
+    url: /wp-admin/themes.php
+    output: images/7.0/2-4-appearance-themes-menu-block-theme.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-appearance-themes-detail-modal
+    title: 外観 テーマ詳細モーダル
+    url: /wp-admin/themes.php
+    output: images/7.0/2-4-appearance-themes-detail-modal.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    actions:
+    - type: click
+      selector: "#twentytwentyfive-action"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-appearance-themes-update-available
+    title: 外観 テーマ更新あり
+    url: /wp-admin/themes.php
+    output: images/7.0/2-4-appearance-themes-update-available.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    wpTheme:
+      slug: twentytwentyfive
+      version: "1.4"
+    afterSnap:
+      wpUpdates:
+        themes: true
+  - id: 2-4-appearance-themes-add-new
+    title: 外観 テーマ新規追加
+    url: /wp-admin/theme-install.php?browse=popular
+    output: images/7.0/2-4-appearance-themes-add-new.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-wordpress-ord-login-page
+    title: WordPress.org ログインページ
+    url: https://login.wordpress.org/register
+    output: images/7.0/2-4-wordpress-org-login-page.jpg
+    authState: false
+    waitFor: body
+  - id: 2-4-appearance-search-themes-filter
+    title: 外観 テーマ検索フィルター
+    url: /wp-admin/theme-install.php
+    output: images/7.0/2-4-appearance-search-themes-filter.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    actions:
+    - type: click
+      selector: ".wp-filter > button.button"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-site-editor-first-view
+    title: サイトエディター 最初の画面
+    url: /wp-admin/site-editor.php
+    output: images/7.0/2-4-site-editor-first-view.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 2-4-appearance-classic-theme-design
+    title: 外観 クラシックテーマでデザインを開いた画面
+    url: /wp-admin/site-editor.php
+    output: images/7.0/2-4-appearance-classic-theme-design.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    wpTheme:
+      slug: twentytwentyone
+  - id: 2-4-appearance-classic-theme-style
+    title: 外観 クラシックテーマでデザインでスタイルを開いた画面
+    url: /wp-admin/site-editor.php
+    output: images/7.0/2-4-appearance-classic-theme-style.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+    - type: click
+      selector: "#stylebook-navigation-item"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-appearance-classic-theme-pattern
+    title: 外観 クラシックテーマでデザインでパターンを開いた画面
+    url: /wp-admin/site-editor.php
+    output: images/7.0/2-4-appearance-classic-theme-pattern.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+    - type: click
+      selector: "#patterns-navigation-item"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-appearance-customize
+    title: 外観 カスタマイズ
+    url: /wp-admin/customize.php
+    output: images/7.0/2-4-appearance-customize.jpg
+    authState: true
+    waitFor: "#customize-controls"
+  - id: 2-4-appearance-widgets
+    title: 外観 ウィジェット
+    url: /wp-admin/widgets.php
+    output: images/7.0/2-4-appearance-widgets.jpg
+    authState: true
+    waitFor: ".edit-widgets-block-editor"
+  - id: 2-4-appearance-classic-widgets-page
+    title: 外観 クラシックウィジェットページ
+    url: https://wordpress.org/plugins/classic-widgets/
+    output: images/7.0/2-4-appearance-classic-widgets-page.jpg
+    authState: false
+    waitFor: body
+  - id: 2-4-appearance-widgets-classic
+    title: 外観 ウィジェット（classic widgets）
+    url: /wp-admin/widgets.php
+    output: images/7.0/2-4-appearance-widgets-classic.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    wpPlugins:
+      - slug: classic-widgets
+        version: "0.3"
+    afterSnap:
+      wpPluginsDelete:
+        - classic-widgets
+  - id: 2-4-appearance-font-library
+    title: 外観 フォントライブラリー
+    url: /wp-admin/font-library.php
+    output: images/7.0/2-4-appearance-font-library.jpg
+    authState: true
+    waitFor: ".admin-ui-navigable-region"
+  - id: 2-4-appearance-menus
+    title: 外観 メニュー
+    url: /wp-admin/nav-menus.php
+    output: images/7.0/2-4-appearance-menus.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-appearance-menus-options
+    title: 外観 メニュー 表示オプション
+    url: /wp-admin/nav-menus.php
+    output: images/7.0/2-4-appearance-menus-options.jpg
+    authState: true
+    waitFor: "#nav-menu-header"
+    actions:
+    - type: click
+      selector: "#show-settings-link"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-appearance-themes-editor
+    title: 外観 テーマエディター
+    url: /wp-admin/theme-editor.php
+    output: images/7.0/2-4-appearance-themes-editor.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-plugins-index
+    title: プラグイン一覧
+    url: /wp-admin/plugins.php
+    output: images/7.0/2-4-plugins-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-plugins-add-new
+    title: プラグイン新規追加
+    url: /wp-admin/plugin-install.php
+    output: images/7.0/2-4-plugins-add-new.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-plugins-add-new-upload
+    title: プラグイン新規追加 アップロード
+    url: /wp-admin/plugin-install.php
+    output: images/7.0/2-4-plugins-add-new-upload.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+    actions:
+    - type: click
+      selector: ".upload-view-toggle"
+      method: dom
+    - type: delay
+      ms: 300
+  - id: 2-4-plugins-show-details
+    title: プラグイン新規追加 詳細表示
+    url: /wp-admin/plugin-install.php?s=contact%2520form%25207&tab=search&type=term
+    output: images/7.0/2-4-plugins-show-detail.jpg
+    authState: true
+    waitFor: ".plugin-card .open-plugin-details-modal"
+    actions:
+    - type: click
+      selector: ".plugin-card:first-of-type .plugin-action-buttons .open-plugin-details-modal"
+      method: dom
+    - type: delay
+      ms: 1000
+  - id: 2-4-users-index
+    title: ユーザー一覧
+    url: /wp-admin/users.php
+    output: images/7.0/2-4-users-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-users-add-new
+    title: ユーザー新規追加
+    url: /wp-admin/user-new.php
+    output: images/7.0/2-4-users-add-new.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-users-your-profile
+    title: ユーザー プロフィール
+    url: /wp-admin/profile.php
+    output: images/7.0/2-4-users-your-profile.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-index
+    title: ツール 一覧
+    url: /wp-admin/tools.php
+    output: images/7.0/2-4-tools-index.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-import
+    title: ツール インポート
+    url: /wp-admin/import.php
+    output: images/7.0/2-4-tools-import.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-search-import-plugins
+    title: ツール インポート プラグイン検索
+    url: http://localhost:8889/wp-admin/plugin-install.php?s=importer&tab=search&type=term
+    output: images/7.0/2-4-tools-search-import-plugins.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-export
+    title: ツール エクスポート
+    url: /wp-admin/export.php
+    output: images/7.0/2-4-tools-export.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-site-health-status
+    title: ツール サイトヘルス
+    url: /wp-admin/site-health.php?tab
+    output: images/7.0/2-4-tools-site-health-status.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-site-health-information
+    title: ツール サイトヘルス 情報タブ
+    url: /wp-admin/site-health.php?tab=debug
+    output: images/7.0/2-4-tools-site-health-information.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-export-personal-data
+    title: ツール 個人データのエクスポート
+    url: /wp-admin/export-personal-data.php
+    output: images/7.0/2-4-tools-export-personal-data.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-tools-erase-personal-data
+    title: ツール 個人データの消去
+    url: /wp-admin/erase-personal-data.php
+    output: images/7.0/2-4-tools-erase-personal-data.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-general
+    title: 設定 一般
+    url: /wp-admin/options-general.php
+    output: images/7.0/2-4-settings-general.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-writing
+    title: 設定 投稿設定
+    url: /wp-admin/options-writing.php
+    output: images/7.0/2-4-settings-writing.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-reading
+    title: 設定 表示設定
+    url: /wp-admin/options-reading.php
+    output: images/7.0/2-4-settings-reading.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-discussion
+    title: 設定 ディスカッション設定
+    url: /wp-admin/options-discussion.php
+    output: images/7.0/2-4-settings-discussion.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-media
+    title: 設定 メディア設定
+    url: /wp-admin/options-media.php
+    output: images/7.0/2-4-settings-media.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-permalinks
+    title: 設定 パーマリンク設定
+    url: /wp-admin/options-permalink.php
+    output: images/7.0/2-4-settings-permalinks.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 2-4-settings-privacy
+    title: 設定 プライバシー設定
+    url: /wp-admin/privacy.php
+    output: images/7.0/2-4-settings-privacy.jpg
+    authState: true
+    waitFor: "#wpbody-content"
