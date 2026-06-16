@@ -139,7 +139,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-001-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -204,7 +204,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-002-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-access-menu.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -257,7 +257,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-003-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-side-menu.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -324,7 +324,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-004-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-command-palette-trigger.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -390,7 +390,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-005-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-style-book.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -466,7 +466,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-006-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-style-book-from-right-sidebar.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -507,7 +507,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-007-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-add-css.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -560,7 +560,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-008-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-global-styles.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -637,7 +637,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-009-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-typography-fonts-library.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -680,7 +680,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-010-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-typography-text.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -723,7 +723,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-011-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-typography-custom-font-size.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -764,7 +764,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-012-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-typography-color.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -858,7 +858,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-013-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-background.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -905,7 +905,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-014-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-shadows.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -945,7 +945,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-015-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-custom-shadow.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -986,7 +986,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-016-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-layout.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1048,7 +1048,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-017-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-blocks.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1095,7 +1095,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-018-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-navigation.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1142,7 +1142,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-019-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-pages.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1189,7 +1189,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-020-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-templates.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1236,7 +1236,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-021-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-patterns.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1289,7 +1289,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-030-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-top-toolbar.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1367,7 +1367,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-031-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-inserter.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1439,7 +1439,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-032-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-document-overview.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1530,7 +1530,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-033-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-zoom-out.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1577,7 +1577,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-034-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-right-sidebar-styles.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1618,7 +1618,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-035-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-style-book-from-right-sidebar.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1674,7 +1674,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-036-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-revisions.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1689,40 +1689,6 @@
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>これまでの作業の履歴を確認できます。また、リビジョンの記録が残っている時点まで戻すこともできます。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
-      <Properties>
-        <PathGeometry>
-          <GeometryPathType PathOpen="false">
-            <PathPointArray>
-              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
-              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
-              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
-              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
-            </PathPointArray>
-          </GeometryPathType>
-        </PathGeometry>
-      </Properties>
-      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
-        <Properties>
-          <Profile type="string">
-            $ID/Embedded
-          </Profile>
-          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
-        </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-037-0.jpg" />
-      </Image>
-    </Rectangle>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>リビジョンを戻す画面</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -1762,7 +1728,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-038-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-add-css-from-right-sidebar.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1890,7 +1856,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-050-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-template-settings-sidebar.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2020,7 +1986,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-060-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-options.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2067,7 +2033,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-061-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/static/3-1-%5Bstatic%5D-top-tool-bar-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2114,7 +2080,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-062-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/static/3-1-%5Bstatic%5D-focus-mode-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2161,7 +2127,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-063-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/static/3-1-%5Bstatic%5D-spot-light-mode-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2230,7 +2196,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-064-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/static/3-1-%5Bstatic%5D-code-editor-mode-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2302,7 +2268,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-065-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/static/3-1-%5Bstatic%5D-keyboard-shorcut-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2401,7 +2367,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/3-1-070-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/static/3-1-%5Bstatic%5D-settings-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>

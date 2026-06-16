@@ -1,0 +1,346 @@
+defaults:
+  viewport:
+    width: 1920
+    height: 1440
+  delay: 500
+
+shots:
+  - id: 3-1-site-editor
+    title: サイトエディター 最初の画面
+    url: /wp-admin/site-editor.php
+    output: images/7.0/3-1-site-editor.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    wpTheme:
+      slug: twentytwentyfive
+  - id: 3-1-site-editor-access-menu
+    title: サイトエディター アクセスメニュー
+    url: /wp-admin/index.php
+    output: images/7.0/3-1-site-editor-access-menu.jpg
+    authState: true
+    waitFor: "#adminmenu"
+    actions:
+      - type: hover
+        selector: "#menu-appearance > a.menu-top"
+      - type: waitFor
+        selector: ".menu-icon-appearance .wp-submenu a[href='site-editor.php']"
+      - type: hover
+        selector: ".menu-icon-appearance .wp-submenu a[href='site-editor.php']"
+  - id: 3-1-site-editor-side-menu
+    title: サイトエディター サイドメニュー
+    url: /wp-admin/site-editor.php
+    output: images/7.0/3-1-site-editor-side-menu.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-command-palette-trigger
+    title: サイトエディター コマンドパレットのトリガー
+    url: /wp-admin/site-editor.php
+    output: images/7.0/3-1-site-editor-command-palette-trigger.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".edit-site-site-hub_toggle-command-center"
+      - type: waitFor
+        selector: ".components-modal__screen-overlay.commands-command-menu__overlay"
+      - type: keyboard
+        text: "スタイル"
+      - type: waitFor
+        selector: "[cmdk-item][data-value='移動: スタイル']"
+  - id: 3-1-site-editor-style-book
+    title: サイトエディター スタイルブック
+    url: /wp-admin/site-editor.php?p=%2Fstyles
+    output: images/7.0/3-1-site-editor-style-book.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: "button[aria-label='スタイルブック']"
+      - type: waitFor
+        selector: ".editor-style-book__iframe"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-right-sidebar-styles
+    title: サイトエディター 右サイドバー スタイル
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-right-sidebar-styles.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-header__settings button[aria-label='スタイル']"
+      - type: waitFor
+        selector: ".editor-global-styles-sidebar"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-revisions
+    title: サイトエディター リビジョン
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-revisions.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-header__settings button[aria-label='スタイル']"
+      - type: waitFor
+        selector: ".editor-global-styles-sidebar"
+      - type: click
+        selector: ".editor-global-styles-sidebar button[aria-label='リビジョン']"
+      - type: waitFor
+        selector: "text=リビジョン"
+      - type: delay
+        ms: 500
+    screenshot:
+      zoom: 1.5
+      clip:
+        x: 640
+        y: 0
+        width: 1280
+        height: 960
+  - id: 3-1-site-editor-style-book-from-right-sidebar
+    title: サイトエディター 右サイドバーからスタイルブック
+    memo: 罫線で指示出す
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-style-book-from-right-sidebar.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-header__settings button[aria-label='スタイル']"
+      - type: waitFor
+        selector: ".editor-global-styles-sidebar"
+      - type: click
+        selector: ".editor-global-styles-sidebar button[aria-label='スタイルブック']"
+      - type: waitFor
+        selector: ".editor-style-book__iframe"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-add-css
+    title: サイトエディター カスタムCSS追加
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fcss
+    output: images/7.0/3-1-site-editor-add-css.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-global-styles
+    title: サイトエディター グローバルスタイル
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fvariations
+    output: images/7.0/3-1-site-editor-global-styles.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-typography-fonts-library
+    title: サイトエディター タイポグラフィ フォントライブラリー
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Ftypography
+    output: images/7.0/3-1-site-editor-typography-fonts-library.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: "button[aria-label='フォントの管理']"
+      - type: waitFor
+        selector: ".font-library-modal[role='dialog']"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-typography-text
+    title: サイトエディター タイポグラフィ テキスト
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Ftypography%2Ftext
+    output: images/7.0/3-1-site-editor-typography-text.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-typography-custom-font-size
+    title: サイトエディター タイポグラフィ カスタムフォントサイズ
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Ftypography
+    output: images/7.0/3-1-site-editor-typography-custom-font-size.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: "button:has-text('フォントサイズプリセット')"
+      - type: waitFor
+        selector: "button[aria-label='フォントサイズを追加']"
+      - type: click
+        selector: "button[aria-label='フォントサイズを追加']"
+      - type: waitFor
+        selector: "button:has-text('新規フォントサイズ 1')"
+      - type: click
+        selector: "button:has-text('新規フォントサイズ 1')"
+      - type: waitFor
+        selector: "text=フルードタイポグラフィ"
+      - type: click
+        selector: "xpath=(//input[contains(@class, 'components-form-toggle__input')])[2]"
+      - type: waitFor
+        selector: "text=最小"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-color
+    title: サイトエディター カラー
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fcolors
+    output: images/7.0/3-1-site-editor-color.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-background
+    title: サイトエディター 背景
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fbackground
+    output: images/7.0/3-1-site-editor-background.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-shadows
+    title: サイトエディター 影
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fshadows
+    output: images/7.0/3-1-site-editor-shadows.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-custom-shadow
+    title: サイトエディター カスタムシャドウ
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fshadows
+    output: images/7.0/3-1-site-editor-custom-shadow.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: "button[aria-label='シャドウを追加']"
+      - type: waitFor
+        selector: "button:has-text('シャドウ 1')"
+      - type: click
+        selector: "button:has-text('シャドウ 1')"
+      - type: waitFor
+        selector: "button:has-text('ドロップシャドウ')"
+      - type: click
+        selector: "button:has-text('ドロップシャドウ')"
+      - type: waitFor
+        selector: "text=X 方向の位置"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-layout
+    title: サイトエディター レイアウト
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Flayout
+    output: images/7.0/3-1-site-editor-layout.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-blocks
+    title: サイトエディター ブロック
+    url: /wp-admin/site-editor.php?p=%2Fstyles&section=%2Fblocks
+    output: images/7.0/3-1-site-editor-blocks.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-navigation
+    title: サイトエディター ナビゲーション
+    url: /wp-admin/site-editor.php?p=%2Fnavigation
+    output: images/7.0/3-1-site-editor-navigation.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-pages
+    title: サイトエディター 固定ページ
+    url: /wp-admin/site-editor.php?p=%2Fpage
+    output: images/7.0/3-1-site-editor-pages.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-templates
+    title: サイトエディター テンプレート
+    url: /wp-admin/site-editor.php?p=%2Ftemplate
+    output: images/7.0/3-1-site-editor-templates.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-patterns
+    title: サイトエディター パターン
+    url: /wp-admin/site-editor.php?p=%2Fpattern
+    output: images/7.0/3-1-site-editor-patterns.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-top-tool-bar
+    title: サイトエディター 上部ツールバー
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-top-toolbar.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+  - id: 3-1-site-editor-inserter
+    title: サイトエディター インサーター
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-inserter.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-document-tools__inserter-toggle"
+      - type: waitFor
+        selector: ".admin-ui-navigable-region"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-document-overview
+    title: サイトエディター ドキュメント概要
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-document-overview.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-document-tools__document-overview-toggle"
+      - type: waitFor
+        selector: ".editor-list-view-sidebar"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-zoom-out
+    title: サイトエディター ズームアウト
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-zoom-out.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-zoom-out-toggle"
+      - type: waitFor
+        selector: ".edit-site-visual-editor__editor-canvas"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-add-css-from-right-sidebar
+    title: サイトエディター 右サイドバー 追加 CSS
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-add-css-from-right-sidebar.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-header__settings button[aria-label='スタイル']"
+      - type: waitFor
+        selector: ".editor-global-styles-sidebar"
+      - type: click
+        selector: ".editor-global-styles-sidebar button[aria-label='さらに表示']"
+      - type: waitFor
+        selector: ".components-dropdown-menu__menu"
+      - type: click
+        selector: ".components-dropdown-menu__menu button:has-text('追加 CSS')"
+      - type: waitFor
+        selector: "textarea.components-textarea-control__input"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-template-settings-sidebar
+    title: サイトエディター テンプレート設定サイドバー
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-template-settings-sidebar.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: waitFor
+        selector: ".interface-interface-skeleton__sidebar"
+      - type: click
+        selector: ".edit-site-visual-editor__editor-canvas"
+      - type: waitFor
+        selector: ".interface-interface-skeleton__footer button:has-text('グループ')"
+      - type: click
+        selector: ".interface-interface-skeleton__footer button:has-text('グループ')"
+      - type: click
+        selector: ".interface-interface-skeleton__sidebar button:has-text('テンプレート')"
+      - type: waitFor
+        selector: "text=ブログホーム"
+      - type: delay
+        ms: 500
+  - id: 3-1-site-editor-options
+    title: サイトエディター オプション
+    url: /wp-admin/site-editor.php?p=%2F&canvas=edit
+    output: images/7.0/3-1-site-editor-options.jpg
+    authState: true
+    waitFor: ".edit-site-layout"
+    actions:
+      - type: click
+        selector: ".editor-header__settings button[aria-label='オプション']"
+      - type: waitFor
+        selector: ".components-dropdown-menu__menu"
