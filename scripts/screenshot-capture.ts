@@ -7,6 +7,7 @@ import yaml from "yaml";
 type Action =
   | { type: "click"; selector: string; method?: "mouse" | "dom" }
   | { type: "hover"; selector: string }
+  | { type: "focus"; selector: string }
   | { type: "waitFor"; selector: string }
   | { type: "delay"; ms: number }
   | { type: "keyboard"; key?: string; text?: string };
@@ -168,6 +169,10 @@ async function runActions(page: Page, actions: Action[] = []) {
 
     if (action.type === "hover") {
       await page.locator(action.selector).hover();
+    }
+
+    if (action.type === "focus") {
+      await page.locator(action.selector).focus();
     }
 
     if (action.type === "waitFor") {

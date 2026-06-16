@@ -54,6 +54,18 @@ actions:
     ms: 300
 ```
 
+ホバーで表示されたサブメニュー内の項目など、クリックせずにキーボードフォーカスを当てた状態を撮影したい場合は、`hover` の後に `focus` を指定します。
+
+```yaml
+actions:
+  - type: hover
+    selector: "#wp-admin-bar-site-name"
+  - type: waitFor
+    selector: "#wp-admin-bar-view-site a"
+  - type: focus
+    selector: "#wp-admin-bar-view-site a"
+```
+
 Playwright のマウス操作ではクリックしづらい管理画面の行アクションなどは、`click` に `method: dom` を指定すると要素の DOM click を実行できます。通常は指定せず、必要な shot だけに使います。
 
 ```yaml
