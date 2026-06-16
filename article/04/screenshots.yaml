@@ -1,0 +1,42 @@
+defaults:
+  viewport:
+    width: 1920
+    height: 1440
+  delay: 500
+
+shots:
+  - id: 4-1-block-editor
+    title: ブロックエディター 最初の画面
+    url: /wp-admin/post.php?post=1&action=edit
+    output: images/7.0/4-1-block-editor.jpg
+    authState: true
+    waitFor: ".interface-interface-skeleton__body"
+  - id: 4-1-classic-editor
+    title: クラシックエディター 最初の画面
+    url: /wp-admin/post.php?post=1&action=edit
+    output: images/7.0/4-1-classic-editor.jpg
+    authState: true
+    wpPlugins: 
+      - slug: classic-editor
+        version: "1.7.0"
+    afterSnap:
+      wpPluginsDelete:
+        - classic-editor
+  - id: 4-1-add-new-post
+    title: ブロックエディター 新規投稿
+    url: /wp-admin/post-new.php
+    output: images/7.0/4-1-add-new-post.jpg
+    authState: true
+    waitFor: ".interface-interface-skeleton__body"
+  - id: 4-1-add-new-page
+    title: ブロックエディター 新規固定ページ
+    url: /wp-admin/post-new.php?post_type=page
+    output: images/7.0/4-1-add-new-page.jpg
+    authState: true
+    waitFor: ".interface-interface-skeleton__body"
+  - id: 4-1-post-tab
+    title: ブロックエディター 投稿タブ
+    url: /wp-admin/post.php?post=1&action=edit
+    output: images/7.0/4-1-post-tab.jpg
+    authState: true
+    waitFor: ".interface-interface-skeleton__body"
