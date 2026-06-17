@@ -6,9 +6,16 @@ import yaml from "yaml";
 
 type Action =
   | { type: "click"; selector: string; method?: "mouse" | "dom" }
+  | {
+      type: "frameClick";
+      frameSelector: string;
+      selector: string;
+      method?: "mouse" | "dom";
+    }
   | { type: "hover"; selector: string }
   | { type: "focus"; selector: string }
   | { type: "waitFor"; selector: string }
+  | { type: "frameWaitFor"; frameSelector: string; selector: string }
   | { type: "delay"; ms: number }
   | { type: "keyboard"; key?: string; text?: string };
 
@@ -167,6 +174,20 @@ async function runActions(page: Page, actions: Action[] = []) {
       }
     }
 
+    if (action.type === "frameClick") {
+      const locator = page
+        .frameLocator(action.frameSelector)
+        .locator(action.selector);
+
+      if (action.method === "dom") {
+        await locator.evaluate((element) => {
+          (element as HTMLElement).click();
+        });
+      } else {
+        await locator.click();
+      }
+    }
+
     if (action.type === "hover") {
       await page.locator(action.selector).hover();
     }
@@ -177,6 +198,13 @@ async function runActions(page: Page, actions: Action[] = []) {
 
     if (action.type === "waitFor") {
       await page.waitForSelector(action.selector);
+    }
+
+    if (action.type === "frameWaitFor") {
+      await page
+        .frameLocator(action.frameSelector)
+        .locator(action.selector)
+        .waitFor();
     }
 
     if (action.type === "delay") {

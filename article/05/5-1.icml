@@ -154,7 +154,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-1-001-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-paragraph.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -201,7 +201,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-1-002-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-paragraph-transform.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -274,7 +274,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-1-003-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-paragraph-more.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -435,7 +435,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-1-004-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-paragraph-options.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -651,6 +651,53 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#コンテンツタブ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>コンテンツタブ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>参照 : https://github.com/WordPress/gutenberg/pull/74201</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
+              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
+              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
+              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-image-contents-tab.jpg" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>画像ブロックのコンテンツタブ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <HyperlinkTextDestination Self="HyperlinkTextDestination/#設定タブ" Name="Destination" DestinationUniqueKey="1" />
     <Content>設定タブ</Content>
   </CharacterStyleRange>
@@ -678,7 +725,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-1-005-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-image-settings-tab.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -731,7 +778,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-1-006-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-1-toolbar-image-styles-tab.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
