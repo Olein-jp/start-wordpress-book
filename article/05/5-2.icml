@@ -349,7 +349,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-010-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-paragraph-color-options.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -402,7 +402,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-011-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-paragraph-typography-options.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -497,7 +497,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-012-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-paragraph-size-options.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -544,7 +544,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-013-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-paragraph-border-options.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -616,7 +616,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-014-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-paragraph-demo-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -906,7 +906,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-015-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-heading-demo-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1197,7 +1197,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-016-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-list-item-select-parent-block.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1276,7 +1276,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-017-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-list-demo-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1455,7 +1455,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-018-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-image-duotone-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1514,7 +1514,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-019-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-image-zoom-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -1873,7 +1873,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-020-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-image-demo-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2092,7 +2092,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-021-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-cover-inner-block.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2481,7 +2481,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-022-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-cover-demo-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -2775,7 +2775,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/5-2-023-0.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/5-2-media-text-demo-sample.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
