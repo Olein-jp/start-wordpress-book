@@ -382,7 +382,7 @@
     <Content>WordPress 本体</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>：WordPress 6.9</Content>
+    <Content>：WordPress 7.0</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -391,7 +391,7 @@
     <Content>利用テーマ</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>：Twenty Twenty-Five 1.4</Content>
+    <Content>：Twenty Twenty-Five 1.5</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -413,7 +413,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>以下の URL にてサポートページを用意しています。ダウンロードデータの公開や本書で制作するウェブサイトのデモサイトなどのコンテンツを用意しています。ぜひ本書とあわせてご利用ください。</Content>
+    <Content>以下の URL にてサポートページを用意しています。本書に関する情報やお問い合わせなどへの公開返答など情報を発信しています。ぜひ本書とあわせてご利用ください。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
