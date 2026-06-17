@@ -340,8 +340,8 @@
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>`https://localwp.com/</Content>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+    <Content>https://localwp.com/</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
