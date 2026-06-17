@@ -115,7 +115,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>WordPress（ワードプレス）は、ブログから高機能なウェブサイトまで作れるオープンソースのソフトウェアです。世界のウェブ上の 43%以上のウェブサイトで利用されており、日本国内においては 80% を超える CMS（コンテンツ・マネージメント・システム）シェアを持っています。</Content>
+    <Content>WordPress（ワードプレス）は、ブログから高機能なウェブサイトまで作れるオープンソースのソフトウェアです。世界のウェブ上の 43 %近くのウェブサイトで利用されており、日本国内においては 80% を超える CMS（コンテンツ・マネージメント・システム）シェアを持っています。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -276,7 +276,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>現在、WordPress 6.9 の時点で最初に搭載されているテーマは Twenty Twenty-Five になっています。この標準テーマ以前にも多くの標準テーマが公開されており、年数にちなんだテーマ名が付けられることで知られています。</Content>
+    <Content>現在、WordPress 7.0 の時点で最初に搭載されているテーマは Twenty Twenty-Five になっています。この標準テーマ以前にも多くの標準テーマが公開されており、年数にちなんだテーマ名が付けられることで知られています。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -418,7 +418,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>現在、世界中に 700 近くの WordPress Meetup が活動しており、日本国内においては 27（2025 年 12 月時点）のグループが定期的に交流や情報交換の場を提供しています。そして、WordCamp という少し規模の大きな WordPress イベントも日本国内を含む世界各地で開催されています。</Content>
+    <Content>現在、世界中に 700 近くの WordPress Meetup が活動しており、日本国内においては 27（2026 年 6 月時点）のグループが定期的に交流や情報交換の場を提供しています。そして、WordCamp という少し規模の大きな WordPress イベントも日本国内を含む世界各地で開催されています。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
