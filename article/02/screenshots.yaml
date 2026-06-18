@@ -357,12 +357,18 @@ shots:
     output: images/7.0/2-4-media-library-grid-view.jpg
     authState: true
     waitFor: "#wpbody-content"
+    actions:
+    - type: delay
+      ms: 3000
   - id: 2-4-media-library-list-view
     title: メディアライブラリー リスト表示
     url: /wp-admin/upload.php?mode=list
     output: images/7.0/2-4-media-library-list-view.jpg
     authState: true
     waitFor: "#wpbody-content"
+    actions:
+    - type: delay
+      ms: 3000
   - id: 2-4-media-modal
     title: メディアライブラリー メディアモーダル
     url: /wp-admin/upload.php?mode=grid
