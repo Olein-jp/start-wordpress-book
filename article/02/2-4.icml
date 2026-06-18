@@ -176,7 +176,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-wordpress-dashboard-sidebar-lined.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/2-4-wordpress-dashboard-sidebar-lined.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -231,12 +231,8 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#更新-httpswordpress.orgdocumentationarticledashboard-updates-screen" Name="Destination" DestinationUniqueKey="1" />
-    <Content>更新 </Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#更新-httpswordpress.orgdocumentationarticledashboard-updates-screen" Name="Destination" DestinationUniqueKey="1" />
-    <Content>https://wordpress.org/documentation/article/dashboard-updates-screen/</Content>
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#更新" Name="Destination" DestinationUniqueKey="1" />
+    <Content>更新</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -3415,9 +3411,9 @@
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="1 0 0 1 150 -100">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
       <Properties>
         <PathGeometry>
           <GeometryPathType PathOpen="false">
@@ -3430,19 +3426,22 @@
           </GeometryPathType>
         </PathGeometry>
       </Properties>
-      <Image Self="ue6" ItemTransform="1 0 0 1 -150 -100">
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
         <Properties>
           <Profile type="string">
             $ID/Embedded
           </Profile>
-          <GraphicBounds Left="0" Top="0" Right="300" Bottom="200" />
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
         <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-appearance-font-library.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>{width:91.22mm}</Content>
+    <Content>フォントライブラリー</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -3481,7 +3480,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-appearance-font-library.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-appearance-menus.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>

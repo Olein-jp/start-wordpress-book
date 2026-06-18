@@ -148,7 +148,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wordpress-dashboard-admin-bar-lined.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/2-3-wordpress-dashboard-admin-bar-lined.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -654,7 +654,7 @@
           </Profile>
           <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
         </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-3-wp-admin-bar-site-name-hover.jpg" />
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/static/2-3-wp-admin-bar-site-name-hover.jpg" />
       </Image>
     </Rectangle>
   </CharacterStyleRange>
@@ -672,6 +672,59 @@
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content> で設定されているサイト名が表示されます。マウスカーソルでホバーすると「サイトを表示」というメニューが表示されますが、サイト名をクリックしても「サイトを表示」をクリックしても、遷移先は同じでウェブサイトのトップページへ遷移します。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#更新" Name="Destination" DestinationUniqueKey="1" />
+    <Content>更新</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
+              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
+              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
+              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>更新可能なものがある場合にのみ表示される</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>WordPress 本体、そしてインストールしているテーマやプラグインの中で更新可能なものがある場合に表示されます。クリックすることで、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>ダッシュボード &gt; 更新</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> へアクセスできます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />

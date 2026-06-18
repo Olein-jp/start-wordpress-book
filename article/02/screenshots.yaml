@@ -470,6 +470,9 @@ shots:
     output: images/7.0/2-4-appearance-themes-add-new.jpg
     authState: true
     waitFor: "#wpbody-content"
+    actions:
+    - type: delay
+      ms: 3000
   - id: 2-4-wordpress-ord-login-page
     title: WordPress.org ログインページ
     url: https://login.wordpress.org/register
@@ -694,6 +697,24 @@ shots:
     output: images/7.0/2-4-settings-general.jpg
     authState: true
     waitFor: "#wpbody-content"
+  - id: 2-4-settings-connectors
+    title: 設定 コネクタ
+    url: /wp-admin/options-connectors.php
+    output: images/7.0/2-4-settings-connectors.jpg
+    authState: true
+    waitFor: ".boot-layout__stage"
+  - id: 2-4-settings-ai-plugin
+    title: 設定 AI
+    url: /wp-admin/options-general.php?page=ai-wp-admin
+    output: images/7.0/2-4-settings-ai.jpg
+    authState: true
+    waitFor: ".boot-layout__stage"
+    wpPlugins:
+      - slug: ai
+        version: "1.0.2"
+    afterSnap:
+      wpPluginsDelete:
+        - ai
   - id: 2-4-settings-writing
     title: 設定 投稿設定
     url: /wp-admin/options-writing.php
