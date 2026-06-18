@@ -138,6 +138,18 @@ shots:
       selector: "#wp-admin-bar-site-name"
     - type: delay
       ms: 300
+  - id: 2-3-wp-admin-bar-updates
+    title: アドミンバー 更新
+    url: /wp-admin/
+    output: images/7.0/2-3-wp-admin-bar-updates.jpg
+    authState: true
+    waitFor: "#wp-admin-bar-updates"
+    screenshot:
+      zoom: 2.5
+      deviceScaleFactor: 2
+      outputScale: 2
+      focus:
+        selector: "#wp-admin-bar-updates"
   - id: 2-3-wp-admin-bar-command-palette
     title: アドミンバー コマンドパレット
     url: /wp-admin/
