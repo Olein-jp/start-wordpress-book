@@ -2990,6 +2990,59 @@
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#フォント" Name="Destination" DestinationUniqueKey="1" />
+    <Content>フォント</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ここからフォントライブラリにアクセスできます。ブロックエディターで利用するフォントを管理できます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
+              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
+              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
+              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-appearance-font-library.jpg" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>フォントライブラリー</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>お手持ちのフォントファイルをアップロードして利用することもできますし、Google Fonts から任意のフォントをインストールして利用できます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <HyperlinkTextDestination Self="HyperlinkTextDestination/#クラシックテーマを有効化している場合" Name="Destination" DestinationUniqueKey="1" />
@@ -3400,54 +3453,14 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#フォント" Name="Destination" DestinationUniqueKey="1" />
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#フォント-1" Name="Destination" DestinationUniqueKey="1" />
     <Content>フォント</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>ここからフォントライブラリにアクセスできます。ブロックエディターで利用するフォントを管理できます。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
-      <Properties>
-        <PathGeometry>
-          <GeometryPathType PathOpen="false">
-            <PathPointArray>
-              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
-              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
-              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
-              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
-            </PathPointArray>
-          </GeometryPathType>
-        </PathGeometry>
-      </Properties>
-      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
-        <Properties>
-          <Profile type="string">
-            $ID/Embedded
-          </Profile>
-          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
-        </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-appearance-font-library.jpg" />
-      </Image>
-    </Rectangle>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>フォントライブラリー</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>お手持ちのフォントファイルをアップロードして利用することもできますし、Google Fonts から任意のフォントをインストールして利用できます。</Content>
+    <Content>ここからフォントライブラリにアクセスできます。ブロックエディターで利用するフォントを管理できます。説明は前述のため割愛します。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -5722,6 +5735,225 @@
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content> - 週の始まりの曜日を設定します。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#コネクタ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>コネクタ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
+              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
+              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
+              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-settings-connectors.jpg" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>設定 &gt; コネクタ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ここでは WordPress サイトを外部サービスに接続できます。WordPress 7.0 では、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Anthropic</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Google</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>OpenAI</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> の３つのサービスとの接続が用意されています。ここで AI との接続を管理し、AI を利用する機能を持つ各プラグインで API キーの入力や管理をしなくても良いようになっています。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ページ上部にて </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>AI プラグイン</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> のインストールを促されますが、インストールするだけで AI が利用できるようになるわけではありません。上記の３つのサービスのどれかの API キーを入力する必要があります。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>AI プラグイン</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> をインストールすることで、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>設定 &gt; AI</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> というメニューが表示されます。そこでは、AI プラグインから提供される各種機能の有効化設定ができます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
+              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
+              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
+              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/2-4-settings-ai.jpg" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>AI プラグインの機能有効化画面</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>AI プラグイン</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> では以下のような機能を提供しています。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>画像の生成と編集</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>コンテンツの分類</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>コンテンツの長さ調整</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>抜粋の生成</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>代替テキストの生成</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>メタディスクリプションの生成</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>修正案ノート</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>修正案の適用</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>コンテンツの要約</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>タイトルの生成</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>アビリティエクスプローラ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>コネクタの承認</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>AI リクエストログ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>コメントモデレーション</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />

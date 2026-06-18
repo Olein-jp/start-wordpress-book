@@ -9,6 +9,11 @@
           <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
         </Properties>
       </CharacterStyle>
+      <CharacterStyle Self="CharacterStyle/Bold" Name="Bold" FontStyle="Bold">
+        <Properties>
+          <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+        </Properties>
+      </CharacterStyle>
     </RootCharacterStyleGroup>
     <RootParagraphStyleGroup Self="pandoc_paragraph_styles">
       <ParagraphStyle Self="$ID/NormalParagraphStyle" Name="$ID/NormalParagraphStyle"
@@ -349,6 +354,44 @@
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>アクセスしている場所から近くで開催される予定の WordPress イベントと、直近に公開された WordPress に関するお知らせが表示されます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#表示オプション" Name="Destination" DestinationUniqueKey="1" />
+    <Content>表示オプション</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ツールバーの下にタブとして表示される表示オプションでは、特定の管理画面の作業領域に表示するフィールドやモジュールを変更できます。アクセスしている画面ごとに異なる画面オプション内容になるため、各ページでどんな表示オプションが選択できるのか注意深く確認してみると良いでしょう。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#ヘルプ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>ヘルプ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ツールバーの下、表示オプションの隣に表示される </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>ヘルプ</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content> には、作業領域に表示されている画面に関連するヘルプ項目が表示されます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ヘルプタブをクリックするとヘルプ項目が表示され、右下のタブをクリックすると折りたたまれます。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 

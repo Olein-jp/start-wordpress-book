@@ -662,8 +662,8 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#公開保存" Name="Destination" DestinationUniqueKey="1" />
-    <Content>公開・保存</Content>
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#公開" Name="Destination" DestinationUniqueKey="1" />
+    <Content>公開</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />

@@ -1550,6 +1550,130 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#設定" Name="Destination" DestinationUniqueKey="1" />
+    <Content>設定</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートタブ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>テンプレートタブ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
+      <Properties>
+        <PathGeometry>
+          <GeometryPathType PathOpen="false">
+            <PathPointArray>
+              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
+              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
+              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
+              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
+            </PathPointArray>
+          </GeometryPathType>
+        </PathGeometry>
+      </Properties>
+      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
+        <Properties>
+          <Profile type="string">
+            $ID/Embedded
+          </Profile>
+          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
+        </Properties>
+        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-template-settings-sidebar.jpg" />
+      </Image>
+    </Rectangle>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>設定のテンプレートタブを開いた画面</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートの情報" Name="Destination" DestinationUniqueKey="1" />
+    <Content>テンプレートの情報</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>現在表示しているテンプレートに関する情報を確認できます。上の画像の場合、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>ブログホーム</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>テンプレートを表示しており、テンプレートに関する簡単な説明と、</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>ページごとの投稿数</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>と</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>ディスカッション</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>に関する設定を確認・編集できます。選択しているテンプレートによっては、表示される情報が異なります。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#コンテンツ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>コンテンツ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>選択しているテンプレートに含まれるコンテンツを確認できます。ブログホームテンプレートの場合、ヘッダーとフッターというテンプレートパーツが呼び出されていることが確認できます。また、クリックすると該当するパーツを選択できます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#デザイン" Name="Destination" DestinationUniqueKey="1" />
+    <Content>デザイン</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>選択しているテンプレートで利用できるように設定されたパターンが表示されます。任意のデザインをクリックすることでテンプレートの構造を簡単に切り替えられます。この機能を利用することで、ブロックテーマでは簡単にテンプレートのレイアウトを変更できます。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#ブロックタブ" Name="Destination" DestinationUniqueKey="1" />
+    <Content>ブロックタブ</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>選択しているブロックで設定可能な情報が表示されます。詳しくは</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>第 5 章「コアブロックを使ってみよう」</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>で紹介します。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <HyperlinkTextDestination Self="HyperlinkTextDestination/#スタイル-1" Name="Destination" DestinationUniqueKey="1" />
     <Content>スタイル</Content>
   </CharacterStyleRange>
@@ -1817,130 +1941,6 @@
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>については前述しているため、ここでは割愛します。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#設定" Name="Destination" DestinationUniqueKey="1" />
-    <Content>設定</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートタブ" Name="Destination" DestinationUniqueKey="1" />
-    <Content>テンプレートタブ</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Figure">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Rectangle Self="uec" StrokeWeight="0" ItemTransform="0.86192 0 0 0.86192 150 -100">
-      <Properties>
-        <PathGeometry>
-          <GeometryPathType PathOpen="false">
-            <PathPointArray>
-              <PathPointType Anchor="-150 -100" LeftDirection="-150 -100" RightDirection="-150 -100" />
-              <PathPointType Anchor="-150 100" LeftDirection="-150 100" RightDirection="-150 100" />
-              <PathPointType Anchor="150 100" LeftDirection="150 100" RightDirection="150 100" />
-              <PathPointType Anchor="150 -100" LeftDirection="150 -100" RightDirection="150 -100" />
-            </PathPointArray>
-          </GeometryPathType>
-        </PathGeometry>
-      </Properties>
-      <Image Self="ue6" ItemTransform="0.86192 0 0 0.86192 -150 -100">
-        <Properties>
-          <Profile type="string">
-            $ID/Embedded
-          </Profile>
-          <GraphicBounds Left="0" Top="0" Right="348.05964" Bottom="232.03976" />
-        </Properties>
-        <Link Self="ueb" LinkResourceURI="file:images/7.0/3-1-site-editor-template-settings-sidebar.jpg" />
-      </Image>
-    </Rectangle>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Caption">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>設定のテンプレートタブを開いた画面</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートの情報" Name="Destination" DestinationUniqueKey="1" />
-    <Content>テンプレートの情報</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>現在表示しているテンプレートに関する情報を確認できます。上の画像の場合、</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>ブログホーム</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>テンプレートを表示しており、テンプレートに関する簡単な説明と、</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>ページごとの投稿数</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>と</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>ディスカッション</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>に関する設定を確認・編集できます。選択しているテンプレートによっては、表示される情報が異なります。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#コンテンツ" Name="Destination" DestinationUniqueKey="1" />
-    <Content>コンテンツ</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>選択しているテンプレートに含まれるコンテンツを確認できます。ブログホームテンプレートの場合、ヘッダーとフッターというテンプレートパーツが呼び出されていることが確認できます。また、クリックすると該当するパーツを選択できます。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header4">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#デザイン" Name="Destination" DestinationUniqueKey="1" />
-    <Content>デザイン</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>選択しているテンプレートで利用できるように設定されたパターンが表示されます。任意のデザインをクリックすることでテンプレートの構造を簡単に切り替えられます。この機能を利用することで、ブロックテーマでは簡単にテンプレートのレイアウトを変更できます。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header3">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#ブロックタブ" Name="Destination" DestinationUniqueKey="1" />
-    <Content>ブロックタブ</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>選択しているブロックで設定可能な情報が表示されます。詳しくは</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>第 5 章「コアブロックを使ってみよう」</Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>で紹介します。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
