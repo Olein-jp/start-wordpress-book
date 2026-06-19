@@ -4,7 +4,17 @@
 <Document DOMVersion="8.0" Self="pandoc_doc">
     <RootCharacterStyleGroup Self="pandoc_character_styles">
       <CharacterStyle Self="$ID/NormalCharacterStyle" Name="Default" />
-      
+      <CharacterStyle Self="CharacterStyle/Bold" Name="Bold" FontStyle="Bold">
+        <Properties>
+          <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+        </Properties>
+      </CharacterStyle>
+      <CharacterStyle Self="CharacterStyle/Code" Name="Code">
+        <Properties>
+          <BasedOn type="object">$ID/NormalCharacterStyle</BasedOn>
+          <AppliedFont type="string">Courier New</AppliedFont>
+        </Properties>
+      </CharacterStyle>
     </RootCharacterStyleGroup>
     <RootParagraphStyleGroup Self="pandoc_paragraph_styles">
       <ParagraphStyle Self="$ID/NormalParagraphStyle" Name="$ID/NormalParagraphStyle"
@@ -16,6 +26,24 @@
               <AlignmentCharacter type="string">.</AlignmentCharacter>
               <Leader type="string"></Leader>
               <Position type="unit">10</Position> <!-- first tab stop -->
+            </ListItem>
+          </TabList>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/Blockquote &gt; Paragraph" Name="Blockquote &gt; Paragraph" LeftIndent="10">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+        </Properties>
+      </ParagraphStyle>
+      <ParagraphStyle Self="ParagraphStyle/BulList &gt; first" Name="BulList &gt; first" BulletsAndNumberingListType="BulletList" LeftIndent="0">
+        <Properties>
+          <BasedOn type="object">$ID/NormalParagraphStyle</BasedOn>
+          <TabList type="list">
+            <ListItem type="record">
+              <Alignment type="enumeration">LeftAlign</Alignment>
+              <AlignmentCharacter type="string">.</AlignmentCharacter>
+              <Leader type="string" />
+              <Position type="unit">10</Position>
             </ListItem>
           </TabList>
         </Properties>
@@ -47,26 +75,50 @@
 <!-- body needs to be non-indented, otherwise code blocks are indented too far -->
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートとコンテンツ管理を区別する" Name="Destination" DestinationUniqueKey="1" />
-    <Content>テンプレートとコンテンツ管理を区別する</Content>
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#コンセプトと特徴" Name="Destination" DestinationUniqueKey="1" />
+    <Content>コンセプトと特徴</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Blockquote &gt; Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Simple things should be easy and intuitive, and complex things possible.</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>ブロックテーマは、これまで WordPress で利用されてきたテーマ（現在ではクラシックテーマと呼ぶ）と同じようにテンプレートを持っています。</Content>
+    <Content>これは WordPress 共同創業者であるマット・マレンウェグ氏が自身のブログに綴った言葉で、日本語に意訳すると「単純なものは直感的に理解でき、複雑なものは実行可能であるべきだ」というような意味になります。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+    <Content>https://ma.tt/2024/05/wp21/</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>サイトエディターでの編集体験も向上してきており、慣れないとブロックエディターで作業しているのか判断が難しいという声もよく聞きます。その流れから、テンプレートにコンテンツを持たせてしまいがちです。</Content>
+    <Content>この Twenty Twenty-Five という WordPress 標準テーマは、この言葉に強くインスピレーションを受けています。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>しかし、WordPress を使う上では、テンプレートとコンテンツはしっかりと線引きをして管理することを個人的には推奨しています。ですので、この先を進めていく上で「現在、テンプレートを編集しているのか」また「今はコンテンツを制作しているのか」を意識・注意しながら進めていかれることをお勧めします。</Content>
+    <Content>このテーマは、柔軟性と適応性を実現し、WordPress でさまざまなパターンやスタイルを選択して物語を伝えられるという方法を示しています。テーマ内パターンにはパブリックドメインから取得された画像が採用されており、詩的で普遍的、そして偏在的なトーンを備えています。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>前標準テーマの Twenty Twenty-Four とは一味違い、テキスト中心のブログや、画像を強調した写真ブログ、多彩なコンテンツを備えたより複雑なブログなど、多目的なブログを構成するために不可欠なテンプレートやパターンを多く用意しています。また、グリッドブロックやセクションスタイルなどの新しいデザインツールも多く採用されています。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
+    <Content>https://make.wordpress.org/core/2024/08/15/introducing-twenty-twenty-five/</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 

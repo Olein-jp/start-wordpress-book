@@ -341,6 +341,31 @@
     <Content>https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header1">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートとコンテンツ管理を区別する" Name="Destination" DestinationUniqueKey="1" />
+    <Content>テンプレートとコンテンツ管理を区別する</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>ブロックテーマは、これまで WordPress で利用されてきたテーマ（現在ではクラシックテーマと呼ぶ）と同じようにテンプレートを持っています。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>サイトエディターでの編集体験も向上してきており、慣れないとブロックエディターで作業しているのか判断が難しいという声もよく聞きます。その流れから、テンプレートにコンテンツを持たせてしまいがちです。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>しかし、WordPress を使う上では、テンプレートとコンテンツはしっかりと線引きをして管理することを個人的には推奨しています。ですので、この先を進めていく上で「現在、テンプレートを編集しているのか」また「今はコンテンツを制作しているのか」を意識・注意しながら進めていかれることをお勧めします。</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
 
   </Story>
   
