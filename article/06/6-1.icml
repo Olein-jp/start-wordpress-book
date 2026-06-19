@@ -95,61 +95,31 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>本章では、WordPress 標準テーマである Twenty Twenty-Five とコアブロックを使って、簡単なウェブサイトを制作します。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>できるだけコードを書かない</Content>
+    <Content>本章では、WordPress 標準テーマに採用されている</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
-    <Content>ローコード</Content>
+    <Content>ブロックテーマ</Content>
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>での制作を意識して構成しているため、見た目としては簡素な印象を持たれる成果物にはなりますが、以下のような内容を実際に作業を進めることで学習できます。</Content>
+    <Content>、そして最新の標準テーマである </Content>
   </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>ブロックテーマの基本的な構造</Content>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>Twenty Twenty-Five</Content>
   </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>コアブロックの実際によくある使い方</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>既成ブロックテーマをベースにしたウェブサイト制作方法の一例</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>サイトエディターとブロックエディターの基本的な使い方</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>パターンの登録方法</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>同期パターンの上書き機能の使い方</Content>
+    <Content> について紹介します。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>実際に本書と同じように手を動かしながら作っていくことで、これらの点について理解を深められるでしょう。</Content>
+    <Content>WordPress を上手に活用するためには *. </Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+    <Content>WordPress で何ができるのか</Content>
+  </CharacterStyleRange>
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>を知っていることが望まれます。そのためにも、現在の WordPress 標準テーマと、そのテーマスタイルであるブロックテーマについて知識を深めることは、WordPress を利用する上であなたの役に立ちます。一緒に理解を深めていきましょう。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -369,31 +339,6 @@
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
   <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
     <Content>https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <HyperlinkTextDestination Self="HyperlinkTextDestination/#テンプレートとコンテンツ管理を区別する" Name="Destination" DestinationUniqueKey="1" />
-    <Content>テンプレートとコンテンツ管理を区別する</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>ブロックテーマは、これまで WordPress で利用されてきたテーマ（現在ではクラシックテーマと呼ぶ）と同じようにテンプレートを持っています。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>サイトエディターでの編集体験も向上してきており、慣れないとブロックエディターで作業しているのか判断が難しいという声もよく聞きます。その流れから、テンプレートにコンテンツを持たせてしまいがちです。</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>しかし、WordPress を使う上では、テンプレートとコンテンツはしっかりと線引きをして管理することを個人的には推奨しています。ですので、この先を進めていく上で「現在、テンプレートを編集しているのか」また「今はコンテンツを制作しているのか」を意識・注意しながら進めていかれることをお勧めします。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 
