@@ -44,6 +44,15 @@ npm run screenshots:02 -- 2-3-wp-admin-bar-site-name-hover 2-3-wp-admin-bar-new-
 
 各スクリーンショットには、必要に応じて `memo` を残せます。`memo` は撮影処理には使われず、制作上のメモとして扱います。
 
+特定のスクリーンショットだけ別の `wp-env` 環境で撮影したい場合は、shot に `wpEnv` を指定します。`config` には使用する wp-env 設定ファイル、`baseUrl` にはその環境の URL を指定します。`start: true` を指定すると、撮影前にその環境を起動します。
+
+```yaml
+wpEnv:
+  config: .wp-env.6.9.json
+  baseUrl: http://localhost:8892
+  start: true
+```
+
 特定の要素にマウスをホバーした状態で撮影したい場合は、`actions` に `hover` を指定します。ホバー後に表示されるメニューやツールチップを待つ場合は、続けて `delay` を指定します。
 
 ```yaml

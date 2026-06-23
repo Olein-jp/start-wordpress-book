@@ -1,0 +1,14 @@
+{
+  "core": "https://downloads.wordpress.org/release/ja/wordpress-6.9.zip",
+  "port": 8892,
+  "testsEnvironment": false,
+  "phpVersion": "8.3",
+  "config": {
+    "WP_DEBUG": true,
+    "SCRIPT_DEBUG": true,
+    "WPLANG": "ja"
+  },
+  "lifecycleScripts": {
+    "afterStart": "wp-env --config=.wp-env.6.9.json run cli wp language core install ja --activate && wp-env --config=.wp-env.6.9.json run cli wp theme activate twentytwentyfive && wp-env --config=.wp-env.6.9.json run cli wp option update blogname \"Start WordPress Book\""
+  }
+}

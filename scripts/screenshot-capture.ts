@@ -45,6 +45,13 @@ type AfterSnap = {
   wpPluginsDelete?: string[];
 };
 
+type WpEnv = {
+  config?: string;
+  baseUrl?: string;
+  start?: boolean;
+  update?: boolean;
+};
+
 type Shot = {
   id: string;
   title?: string;
@@ -61,6 +68,7 @@ type Shot = {
   fullPage?: boolean;
   wpTheme?: WpTheme;
   wpPlugins?: WpPlugin[];
+  wpEnv?: WpEnv;
   afterSnap?: AfterSnap;
   wpOptions?: Record<string, string | number | boolean>;
   actions?: Action[];
@@ -91,6 +99,7 @@ type Scenario = {
     fullPage?: boolean;
     wpTheme?: WpTheme;
     wpPlugins?: WpPlugin[];
+    wpEnv?: WpEnv;
     viewport?: {
       width: number;
       height: number;
@@ -138,10 +147,28 @@ function getShotIds(args: string[]) {
   return ids;
 }
 
+let currentWpEnvConfig: string | undefined;
+
+function getWpEnvBin() {
+  return path.resolve(
+    "node_modules",
+    ".bin",
+    process.platform === "win32" ? "wp-env.cmd" : "wp-env"
+  );
+}
+
+function getWpEnvArgs(args: string[], config = currentWpEnvConfig) {
+  return config ? [`--config=${config}`, ...args] : args;
+}
+
 function runWpCli(args: string[], errorMessage: string) {
-  const result = spawnSync("npm", ["run", "env:cli", "--", ...args], {
-    stdio: "inherit",
-  });
+  const result = spawnSync(
+    getWpEnvBin(),
+    getWpEnvArgs(["run", "cli", "wp", ...args]),
+    {
+      stdio: "inherit",
+    }
+  );
 
   if (result.status !== 0) {
     throw new Error(errorMessage);
@@ -149,9 +176,13 @@ function runWpCli(args: string[], errorMessage: string) {
 }
 
 function getWpCliOutput(args: string[]) {
-  const result = spawnSync("npm", ["run", "--silent", "env:cli", "--", ...args], {
-    encoding: "utf8",
-  });
+  const result = spawnSync(
+    getWpEnvBin(),
+    getWpEnvArgs(["run", "cli", "wp", ...args]),
+    {
+      encoding: "utf8",
+    }
+  );
 
   if (result.status !== 0) {
     return undefined;
@@ -221,6 +252,86 @@ async function runActions(page: Page, actions: Action[] = []) {
       }
     }
   }
+}
+
+function normalizeWpEnv(wpEnv: WpEnv | undefined) {
+  if (wpEnv === undefined) {
+    return undefined;
+  }
+
+  if (!wpEnv || Array.isArray(wpEnv) || typeof wpEnv !== "object") {
+    throw new Error("wpEnv must be an object.");
+  }
+
+  if (wpEnv.config !== undefined && typeof wpEnv.config !== "string") {
+    throw new Error("wpEnv.config must be a string.");
+  }
+
+  if (wpEnv.baseUrl !== undefined && typeof wpEnv.baseUrl !== "string") {
+    throw new Error("wpEnv.baseUrl must be a string.");
+  }
+
+  if (wpEnv.start !== undefined && typeof wpEnv.start !== "boolean") {
+    throw new Error("wpEnv.start must be a boolean.");
+  }
+
+  if (wpEnv.update !== undefined && typeof wpEnv.update !== "boolean") {
+    throw new Error("wpEnv.update must be a boolean.");
+  }
+
+  const config = wpEnv.config?.trim();
+  const baseUrl = wpEnv.baseUrl?.trim();
+
+  if (config === "") {
+    throw new Error("wpEnv.config must be a non-empty string.");
+  }
+
+  if (baseUrl === "") {
+    throw new Error("wpEnv.baseUrl must be a non-empty string.");
+  }
+
+  if (baseUrl !== undefined) {
+    new URL(baseUrl);
+  }
+
+  return {
+    config,
+    baseUrl,
+    start: wpEnv.start ?? false,
+    update: wpEnv.update ?? false,
+  };
+}
+
+function getWpEnvKey(wpEnv: ReturnType<typeof normalizeWpEnv>) {
+  return wpEnv?.config ?? "default";
+}
+
+const startedWpEnvs = new Set<string>();
+
+function ensureWpEnvStarted(wpEnv: ReturnType<typeof normalizeWpEnv>) {
+  if (!wpEnv?.start) {
+    return;
+  }
+
+  const key = `${getWpEnvKey(wpEnv)}:${wpEnv.update ? "update" : "start"}`;
+
+  if (startedWpEnvs.has(key)) {
+    return;
+  }
+
+  const result = spawnSync(
+    getWpEnvBin(),
+    getWpEnvArgs(["start", ...(wpEnv.update ? ["--update"] : [])], wpEnv.config),
+    {
+      stdio: "inherit",
+    }
+  );
+
+  if (result.status !== 0) {
+    throw new Error(`Failed to start wp-env: ${getWpEnvKey(wpEnv)}`);
+  }
+
+  startedWpEnvs.add(key);
 }
 
 function updateWpOptions(wpOptions: Shot["wpOptions"]) {
@@ -868,7 +979,7 @@ async function main() {
   const scenarioDir = path.dirname(scenarioPath);
   const config = loadScreenshotConfig();
   const scenario = yaml.parse(fs.readFileSync(scenarioPath, "utf8")) as Scenario;
-  const baseUrl = process.env.WP_BASE_URL || "http://localhost:8889";
+  const defaultBaseUrl = process.env.WP_BASE_URL || "http://localhost:8889";
 
   if (!Array.isArray(scenario.shots)) {
     throw new Error(`No shots found in scenario: ${scenarioPath}`);
@@ -893,11 +1004,17 @@ async function main() {
   }
 
   const browser = await chromium.launch();
+  let activeWpEnv: string | undefined;
   let activeWpTheme: string | undefined;
   let activeWpPlugins: string | undefined;
 
   try {
     for (const shot of shots) {
+      const wpEnv = normalizeWpEnv(
+        shot.wpEnv ?? scenario.defaults?.wpEnv ?? config.defaults?.wpEnv
+      );
+      const wpEnvKey = getWpEnvKey(wpEnv);
+      const baseUrl = wpEnv?.baseUrl ?? defaultBaseUrl;
       const viewport =
         shot.viewport ?? scenario.defaults?.viewport ?? config.defaults?.viewport;
       const wpTheme = normalizeWpTheme(
@@ -909,6 +1026,15 @@ async function main() {
       );
       const wpPluginsKey = getWpPluginsKey(wpPlugins);
       const afterSnap = normalizeAfterSnap(shot.afterSnap);
+
+      ensureWpEnvStarted(wpEnv);
+      currentWpEnvConfig = wpEnv?.config;
+
+      if (wpEnvKey !== activeWpEnv) {
+        activeWpTheme = undefined;
+        activeWpPlugins = undefined;
+        activeWpEnv = wpEnvKey;
+      }
 
       if (wpThemeKey && wpThemeKey !== activeWpTheme) {
         activateWpTheme(wpTheme);

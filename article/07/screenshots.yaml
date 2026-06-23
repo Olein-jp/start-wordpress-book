@@ -1,0 +1,23 @@
+defaults:
+  viewport:
+    width: 1920
+    height: 1440
+  delay: 500
+
+shots:
+  - id: 7-1-admin-profile-69
+    title: WordPress 6.9 の管理画面プロフィール
+    wpEnv:
+      config: .wp-env.6.9.json
+      baseUrl: http://localhost:8892
+      start: true
+    url: /wp-admin/profile.php
+    output: images/7.0/7-1-admin-profile-69.jpg
+    authState: true
+    waitFor: "#wpbody-content"
+  - id: 7-1-admin-dashboard-70
+    title: WordPress 7.0 の管理画面ダッシュボード
+    url: /wp-admin
+    output: images/7.0/7-1-admin-dashboard-70.jpg
+    authState: true
+    waitFor: "#wpbody-content"
