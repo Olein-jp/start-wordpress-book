@@ -58,7 +58,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>WordPress 6.9 をベースに、管理画面で可能な設定内容からブロックエディター、サイトエディターの各メニューの紹介、そしてよく利用することが多いコアブロックでできることと活用方法、最後に簡単なウェブサイトを作ってみるという流れで本書を進めてきました。</Content>
+    <Content>WordPress 7.0 をベースに、管理画面で可能な設定内容からブロックエディター、サイトエディターの各メニューの紹介、そしてよく利用することが多いコアブロックの基本的な使い方の紹介、という流れで本書を進めてきました。いかがでしたでしょうか。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
