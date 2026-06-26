@@ -422,15 +422,6 @@
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
-<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList &gt; first" NumberingContinue="false">
-  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>参照 : </Content>
-  </CharacterStyleRange>
-  <CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Code">
-    <Content>https://ja.wordpress.org/team/handbook/meetup-organizer-handbook/japan-wordpress-meetup/</Content>
-  </CharacterStyleRange>
-</ParagraphStyleRange>
-<Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>WordPress ダッシュボードのウィジェットで、皆さんがアクセスしているエリアの近くで開催される WordPress コミュニティイベントのお知らせを確認できます。ぜひ、お近くの WordPress Meetup や WordCamp に遊びに行ってみてはいかがでしょうか。</Content>

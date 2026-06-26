@@ -198,6 +198,12 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>具体的なホームページやブログの構築方法</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/BulList">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>個人レベルで取り組むことが難しいホームページ運営方法</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
@@ -223,7 +229,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>それから複数書籍の出版を経て、WordPress 6.7 に対応した『WordPress 6.7 対応 Twenty Twenty-Five でウェブサイトを作ろう』を出版し、多くの方の目に触れる機会を得て、さまざまなご意見やご感想をいただきました。</Content>
+    <Content>それから複数書籍の出版を経て、WordPress 6.7 に対応した『WordPress 6.7 対応 Twenty Twenty-Five でウェブサイトを作ろう』や『WordPress 6.9.x 対応 いちばんわかりやすい WordPress の本』を出版し、多くの方の目に触れる機会を得て、さまざまなご意見やご感想をいただきました。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -291,7 +297,7 @@
 <Br />
 <ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
-    <Content>すでに WordPress を触っている方であれば、本書に掲載しているスクリーンショットを見るだけで想像できることが多いでしょう。しかし、これから WordPress を触り始めるという方にとって、多くははじめて見る画面でしょう。ですので、実際に WordPress を触りながら本書を読み進めることをオススメします。</Content>
+    <Content>すでに WordPress を触っている方であれば、本書に掲載しているスクリーンショットを見るだけで想像できることが多いでしょう。しかし、これから WordPress を触り始めるという方にとって、多くははじめて見る画面でしょう。ですので、実際に WordPress を触りながら本書を読み進めることをおすすめします。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
@@ -401,6 +407,19 @@
   </CharacterStyleRange>
   <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
     <Content>：WP Multibyte Patch 2.9.3</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Header2">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <HyperlinkTextDestination Self="HyperlinkTextDestination/#実際のウェブサイトの作り方について" Name="Destination" DestinationUniqueKey="1" />
+    <Content>実際のウェブサイトの作り方について</Content>
+  </CharacterStyleRange>
+</ParagraphStyleRange>
+<Br />
+<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Paragraph">
+  <CharacterStyleRange AppliedCharacterStyle="$ID/NormalCharacterStyle">
+    <Content>本書では WordPress の基本的な情報について紹介していますが、実際にウェブサイトやブログを作る方法には触れていません。それらの情報については、別途有償資料として公開・販売することを検討しています。詳しくはサポートサイトや SNS でご確認ください。</Content>
   </CharacterStyleRange>
 </ParagraphStyleRange>
 <Br />
